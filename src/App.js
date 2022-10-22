@@ -880,6 +880,15 @@ const categoryOptions = [
   { value: "pizza", label: "Pizza" },
   { value: "drinks", label: "Drinks" },
   { value: "mexican", label: "Mexican" },
+  { value: "healthy", label: "Healthy" },
+  { value: "seafood", label: "Seafood" },
+  { value: "breakfast", label: "Breakfast" },
+  { value: "dessert", label: "Dessert" },
+  { value: "italian", label: "Italian" },
+  { value: "american", label: "American" },
+  { value: "asian", label: "East Asian" },
+  { value: "indian", label: "Indian" },
+  { value: "get", label: "Available on GET App" },
 ];
 
 //options for sorts
@@ -923,8 +932,31 @@ function App() {
 
       {/*The restaurant boxes*/}
       {sortedRestaurantArray.map((restaurant) => {
+<<<<<<< HEAD
         if (restaurant.isPizza && selectedCategory == "pizza")
           return <div id="boxes">{restaurant.name}</div>;
+=======
+        if (
+          selectedCategory == "all" ||
+          (restaurant.isPizza && selectedCategory == "pizza") ||
+          (restaurant.isDrinks && selectedCategory == "drinks") ||
+          (restaurant.isMexican && selectedCategory == "mexican") ||
+          (restaurant.isHealthy && selectedCategory == "healthy") ||
+          (restaurant.isSeafood && selectedCategory == "seafood") ||
+          (restaurant.isBreakfast && selectedCategory == "breakfast") ||
+          (restaurant.isDessert && selectedCategory == "dessert") ||
+          (restaurant.isItalian && selectedCategory == "italian") ||
+          (restaurant.isAmerican && selectedCategory == "american") ||
+          (restaurant.isAsian && selectedCategory == "asian") ||
+          (restaurant.isIndian && selectedCategory == "indian") ||
+          (restaurant.isGetApp && selectedCategory == "get")
+        )
+          return (
+            <div style={{ display: "flex" }}>
+              <Restaurant name={restaurant.name} price={restaurant.price} />
+            </div>
+          );
+>>>>>>> 53b412b100b55b6c6ec1bd26a27f1719ebc63582
       })}
     </div>
   );
