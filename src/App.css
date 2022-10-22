@@ -1,5 +1,44 @@
 .App {
   text-align: center;
+  margin-top: 3em;
+}
+
+#select {
+  width: "300px";
+}
+
+#things {
+  background-color: gainsboro;
+  padding: 2rem;
+}
+
+#category {
+  padding: 1px;
+}
+
+#nav {
+  position: fixed;
+  background-color: #333333;
+  z-index: 10;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#taste {
+  background-image: url("campusbackground.png");
+  color: white;
+  padding: 2rem;
+}
+
+.navlink {
+  margin: 0em 5em 0em 5em;
+  color: white;
+  text-decoration: inherit;
+  /*padding: 3rem;*/
+  line-height: 3em;
+  vertical-align: middle;
 }
 
 #boxes {
@@ -9,8 +48,21 @@
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-#select {
-  width: "300px";
+.restaurantBox {
+  height: 4rem;
+  margin: 2rem;
+  cursor: pointer;
+  background-color: #c094c4;
+  border-radius: 15px;
+  border: 2px solid rgb(91, 70, 211);
+  justify-content: space-between;
+  width: 20%;
+  float: left;
+  display: inline;
+  padding: 2px;
+  margin-right: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #things {

@@ -1,10 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Restaurant from "./Restaurant.js";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import Popup from "./Popup.js";
-import OscarsLogo from "./imgfiles/oscarstacoshop.png";
 
 // JSON data for each restaurant
 
@@ -12,6 +11,7 @@ var ANZIEBLUE = {
   name: "Anzie Blue",
   price: "$$",
   address: "2111 Belcourt Ave, Nashville, TN 37212",
+  imgLoc: "..imgfiles/anzieblue.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -24,11 +24,14 @@ var ANZIEBLUE = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.13661,
+  long: -86.80143,
 };
 var BANHMIANDROLL = {
   name: "Banh Mi and Roll+",
   price: "$",
   address: "1808 20th Ave S Ste 101, Nashville, TN 37212",
+  imgLoc: "..imgfiles/banhmiroll.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -41,11 +44,14 @@ var BANHMIANDROLL = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.13647,
+  long: -86.79941,
 };
 var BARISTAPARLOR = {
   name: "Barista Parlor",
   price: "$",
   address: "1817 21st Ave S, Nashville, TN 37212",
+  imgLoc: "..imgfiles/baristaparlor.png",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -58,11 +64,14 @@ var BARISTAPARLOR = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.13583,
+  long: -86.80112,
 };
 var BISCUITLOVE = {
   name: "Biscuit Love",
   price: "$$",
   address: "2001 Belcourt Ave Nashville, TN 37212",
+  imgLoc: "..imgfiles/biscuitlove.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -75,11 +84,14 @@ var BISCUITLOVE = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.13666,
+  long: -86.7997,
 };
 var CABANATAPS = {
   name: "Cabana Taps",
   price: "$$",
   address: "1910 Belcourt Ave, Nashville, TN 37212",
+  imgLoc: "..imgfiles/bombaypalace.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -92,11 +104,14 @@ var CABANATAPS = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.1372,
+  long: -86.79921,
 };
 var CENTRALBBQ = {
   name: "Central BBQ",
   price: "$$",
   address: "1601 21st Ave S, Nashville, TN 37212",
+  imgLoc: "..imgfiles/centralbbq.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -109,11 +124,14 @@ var CENTRALBBQ = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.16304,
+  long: -86.79086,
 };
 var GRAINBERRY = {
   name: "Grain & Berry",
   price: "$$",
   address: "1806 20th Ave S, Nashville, TN 37212",
+  imgLoc: "..imgfiles/grainandberry.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -126,11 +144,14 @@ var GRAINBERRY = {
   isSeafood: false,
   isPizza: false,
   isHealthy: true,
+  lat: 36.1336,
+  long: -86.79942,
 };
 var THEGRILLEDCHEESERIE = {
   name: "The Grilled Cheeserie",
   price: "$",
   address: "2003 Belcourt Ave, Nashville, TN 37212",
+  imgLoc: "..imgfiles/grilledcheeserie.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -143,11 +164,14 @@ var THEGRILLEDCHEESERIE = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.13671,
+  long: -86.79986,
 };
 var HOPDODDY = {
   name: "Hopdoddy Burger Bar",
   price: "$$",
   address: "1805 21st Ave S, Nashville, TN 37212",
+  imgLoc: "..imgfiles/hopdoddy.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -160,11 +184,14 @@ var HOPDODDY = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.1363,
+  long: -86.80136,
 };
 var JENIS = {
   name: "Jeni's Splendid Ice Creams",
   price: "$$",
   address: "1819 21st Ave S, Nashville, TN 37212",
+  imgLoc: "..imgfiles/jenis.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -177,11 +204,14 @@ var JENIS = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.13576,
+  long: -86.80116,
 };
 var MEETNOODLES = {
   name: "Meet Noodles",
   price: "$$",
   address: "2121 Belcourt Ave, Nashville, TN 37212",
+  imgLoc: "..imgfiles/meetnoodles.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -194,11 +224,14 @@ var MEETNOODLES = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.13656,
+  long: -86.80275,
 };
 var NICOLETTOS = {
   name: "Nicoletto's Italian Kitchen",
   price: "$$",
   address: "2123 Belcourt Ave, Nashville, TN 37212",
+  imgLoc: "..imgfiles/nicolettos.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -211,11 +244,14 @@ var NICOLETTOS = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.13664,
+  long: -86.80295,
 };
 var SHOKKURAMEN = {
   name: "Shokku Ramen",
   price: "$$",
   address: "2127 Belcourt Ave, Nashville, TN 37212",
+  imgLoc: "..imgfiles/shokkuramen.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -228,11 +264,14 @@ var SHOKKURAMEN = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.13674,
+  long: -86.80324,
 };
 var TACOMAMA = {
   name: "Taco Mama",
   price: "$$",
   address: "1612 21st Ave S, Nashville, TN 37212",
+  imgLoc: "..imgfiles/tacomama.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: true,
@@ -245,11 +284,14 @@ var TACOMAMA = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.13827,
+  long: -86.8005,
 };
 var URBANJUICER = {
   name: "The Urban Juicer",
   price: "$$",
   address: "1622 21st Ave S, Nashville, TN 37212",
+  imgLoc: "..imgfiles/urbanjuicer.png",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -262,11 +304,14 @@ var URBANJUICER = {
   isSeafood: false,
   isPizza: false,
   isHealthy: true,
+  lat: 36.13811,
+  long: -86.80062,
 };
 var CHUYS = {
   name: "Chuy's",
   price: "$$",
   address: "1901 Broadway, Nashville, TN 37203",
+  imgLoc: "..imgfiles/chuys.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: true,
@@ -279,11 +324,14 @@ var CHUYS = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.15057,
+  long: -86.79641,
 };
 var DONATOSPIZZA = {
   name: "Donato's Pizza",
   price: "$$",
   address: "1915 Broadway, Nashville, TN 37203",
+  imgLoc: "..imgfiles/donatos.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -296,11 +344,14 @@ var DONATOSPIZZA = {
   isSeafood: false,
   isPizza: true,
   isHealthy: false,
+  lat: 36.1499,
+  long: -86.79748,
 };
 var HELENSHOTCHICKEN = {
   name: "Helen's Hot Chicken",
   price: "$",
   address: "2010 Scarritt Pl, Nashville, TN 37203",
+  imgLoc: "..imgfiles/helenshotchicken.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -313,11 +364,14 @@ var HELENSHOTCHICKEN = {
   isSeafood: true,
   isPizza: false,
   isHealthy: false,
+  lat: 36.14615043397751,
+  long: -86.79895700650803,
 };
 var MELLOWMUSHROOM = {
   name: "Mellow Mushroom",
   price: "$$",
   address: "212 21st Ave S, Nashville, TN 37203",
+  imgLoc: "..imgfiles/mellowmushroom.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -330,11 +384,14 @@ var MELLOWMUSHROOM = {
   isSeafood: false,
   isPizza: true,
   isHealthy: false,
+  lat: 36.147508570892555,
+  long: -86.79907582318071,
 };
 var NADA = {
   name: "Nada",
   price: "$$",
   address: "202 21st Ave S Nashville, TN 37203",
+  imgLoc: "..imgfiles/nada.png",
   isGetApp: false,
   isDrinks: true,
   isMexican: true,
@@ -347,11 +404,14 @@ var NADA = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.14811596635937,
+  long: -86.7990791616437,
 };
 var THEAINSWORTH = {
   name: "The Ainsworth",
   price: "$$",
   address: "206 21st Ave S, Nashville, TN 37203",
+  imgLoc: "..imgfiles/ainsworth.png",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -364,11 +424,14 @@ var THEAINSWORTH = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.14778525953427,
+  long: -86.79913119699204,
 };
 var SARABHASCREAMERY = {
   name: "Sarabha's Creamery",
   price: "$$",
   address: "400 21st Ave S suite 201, Nashville, TN 37203",
+  imgLoc: "..imgfiles/sarabhas.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -381,11 +444,14 @@ var SARABHASCREAMERY = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.147307658898065,
+  long: -86.79887693767307,
 };
 var THESLIDERHOUSE = {
   name: "The Slider House",
   price: "$$",
   address: "1907 Division St, Nashville, TN 37203",
+  imgLoc: "..imgfiles/sliderhouse.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -398,11 +464,14 @@ var THESLIDERHOUSE = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.149951929734684,
+  long: -86.79629631155957,
 };
 var URBANCOOKHOUSE = {
   name: "Urban Cookhouse",
   price: "$$",
   address: "1907 Broadway, Nashville, TN 37203",
+  imgLoc: "..imgfiles/urbancookhouse.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -415,6 +484,8 @@ var URBANCOOKHOUSE = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.15048579947603,
+  long: -86.796838959506,
 };
 var BOMBAYPALACE = {
   name: "Bombay Palace",
@@ -432,6 +503,8 @@ var BOMBAYPALACE = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.144499520729696,
+  long: -86.81379776273519,
 };
 var CHILIS = {
   name: "Chili's Grill & Bar",
@@ -449,6 +522,8 @@ var CHILIS = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.14822621649832,
+  long: -86.80638720179039,
 };
 var INCHINSBAMBOOGARDEN = {
   name: "Inchin's Bamboo Garden",
@@ -466,6 +541,8 @@ var INCHINSBAMBOOGARDEN = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.15366230737689,
+  long: -86.79444030781157,
 };
 var CRABFEVER = {
   name: "Crab Fever",
@@ -483,6 +560,8 @@ var CRABFEVER = {
   isSeafood: true,
   isPizza: false,
   isHealthy: false,
+  lat: 36.15186415827151,
+  long: -86.79793149540174,
 };
 var FABLE = {
   name: "Fable Lounge",
@@ -500,6 +579,8 @@ var FABLE = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.14613961265017,
+  long: -86.81273230847562,
 };
 var KOISUSHI = {
   name: "Koi Sushi & Tai",
@@ -517,6 +598,8 @@ var KOISUSHI = {
   isSeafood: true,
   isPizza: false,
   isHealthy: false,
+  lat: 36.15099404666151,
+  long: -86.80486703767974,
 };
 var PAPAJOHNS = {
   name: "Papa John's Pizza",
@@ -534,6 +617,8 @@ var PAPAJOHNS = {
   isSeafood: false,
   isPizza: true,
   isHealthy: false,
+  lat: 36.148323832894704,
+  long: -86.80598393036196,
 };
 var SITARINDIAN = {
   name: "Sitar Indian Restaurant",
@@ -551,6 +636,8 @@ var SITARINDIAN = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.15120857083662,
+  long: -86.80154298729808,
 };
 var SUNANDFORK = {
   name: "Sun & Fork",
@@ -568,6 +655,8 @@ var SUNANDFORK = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.14573771959386,
+  long: -86.80846163155606,
 };
 var WENDYS = {
   name: "Wendy's",
@@ -585,6 +674,8 @@ var WENDYS = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.14567,
+  long: -86.81002,
 };
 var CAFECOCO = {
   name: "Cafe Coco",
@@ -602,6 +693,8 @@ var CAFECOCO = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.1519186970644,
+  long: -86.80495572129875,
 };
 var ELLISTONPLACESODASHOP = {
   name: "Elliston Place Soda Shop",
@@ -619,6 +712,8 @@ var ELLISTONPLACESODASHOP = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.15182635764799,
+  long: -86.80338036576215,
 };
 var FRUTTABOWLS = {
   name: "Frutta Bowls",
@@ -636,6 +731,8 @@ var FRUTTABOWLS = {
   isSeafood: false,
   isPizza: false,
   isHealthy: true,
+  lat: 36.1481379725879,
+  long: -86.8083653701096,
 };
 var ILOVESUSHI = {
   name: "I Love Sushi",
@@ -653,6 +750,8 @@ var ILOVESUSHI = {
   isSeafood: true,
   isPizza: false,
   isHealthy: false,
+  lat: 36.150061440899464,
+  long: -86.80574469875738,
 };
 var JAMBA = {
   name: "Jamba",
@@ -670,6 +769,8 @@ var JAMBA = {
   isSeafood: false,
   isPizza: false,
   isHealthy: true,
+  lat: 36.149652532194395,
+  long: -86.8064012849776,
 };
 var JETSPIZZA = {
   name: "Jet's Pizza",
@@ -687,6 +788,8 @@ var JETSPIZZA = {
   isSeafood: false,
   isPizza: true,
   isHealthy: false,
+  lat: 36.14852364818687,
+  long: -86.8090601700091,
 };
 var MICHAELANGELOSPIZZA = {
   name: "Michaelangelo's Pizza",
@@ -704,6 +807,8 @@ var MICHAELANGELOSPIZZA = {
   isSeafood: false,
   isPizza: true,
   isHealthy: false,
+  lat: 36.15180412888943,
+  long: -86.80403482470817,
 };
 var OSCARSTACOSHOP = {
   name: "Oscar's Taco Shop",
@@ -721,6 +826,8 @@ var OSCARSTACOSHOP = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.148860390079754,
+  long: -86.80625266871377,
 };
 var POKEBROS = {
   name: "Poke Bros",
@@ -738,6 +845,8 @@ var POKEBROS = {
   isSeafood: true,
   isPizza: false,
   isHealthy: false,
+  lat: 36.14830317479013,
+  long: -86.80811755643651,
 };
 var ROMAPIZZAANDPASTA = {
   name: "Roma Pizza & Pasta",
@@ -755,6 +864,8 @@ var ROMAPIZZAANDPASTA = {
   isSeafood: false,
   isPizza: true,
   isHealthy: false,
+  lat: 36.14828,
+  long: -86.808225,
 };
 var SATAYTHAIGRILL = {
   name: "Satay Thai Grill",
@@ -772,6 +883,8 @@ var SATAYTHAIGRILL = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.148266500874314,
+  long: -86.80799961688714,
 };
 var SWEETDOTS = {
   name: "Sweet Dots",
@@ -789,6 +902,8 @@ var SWEETDOTS = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.15125,
+  long: -86.804,
 };
 var JPCAFE = {
   name: "JP Cafe",
@@ -806,6 +921,8 @@ var JPCAFE = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.15784949442509,
+  long: -86.76858508040135,
 };
 var HOLYSMOKES = {
   name: "Holy Smokes",
@@ -823,6 +940,8 @@ var HOLYSMOKES = {
   isSeafood: false,
   isPizza: false,
   isHealthy: false,
+  lat: 36.14464077446511,
+  long: -86.80405703399119,
 };
 
 const sortedRestaurantArray = [
@@ -951,29 +1070,59 @@ const sortOptions = [
 ];
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const togglePopup = () => {
-    setIsOpen(!isOpen);
-  };
   //state for categories
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("all");
   //state for sort by
-  const [selectedSort, setSelectedSort] = useState(null);
+  const [selectedSort, setSelectedSort] = useState("price");
+  //states for user lat and long
+  const [userLat, setUserLat] = useState(null);
+  const [userLong, setUserLong] = useState(null);
+
+  useEffect(() => {
+    if ("geolocation" in navigator) {
+      console.log("Available");
+      navigator.geolocation.getCurrentPosition(function (position) {
+        setUserLat(position.coords.latitude);
+        setUserLong(position.coords.longitude);
+        console.log("Latitude is :", position.coords.latitude);
+        console.log("Longitude is :", position.coords.longitude);
+      });
+    } else {
+      console.log("Not Available");
+    }
+  }, []);
+
   return (
     <div className="App">
-      <h1>Tast the Nash!</h1>
+      <div id="nav">
+        <a href="#map" class="navlink">
+          Maps
+        </a>
+        <a href="#search" class="navlink">
+          Search
+        </a>
+        <a href="#category" class="navlink">
+          Category
+        </a>
+        <a href="#sort" class="navlink">
+          Sort
+        </a>
+      </div>
+      <h1 id="taste">Tast the Nash!</h1>
       <div id="things">
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=11MSZMur_QnNCaeMNLguURSVG0_dRA5E&ehbc=2E312F"
           width="640"
           height="480"
+          href="map"
         ></iframe>
-        <h4>We will put search and restaurant component stuff here.</h4>
+        <h4 href="search">
+          We will put search and restaurant component stuff here.
+        </h4>
       </div>
 
       {/*Restaurant component stuff*/}
-      <div id="category">
+      <div id="category" href="category">
         {/*Category selector*/}
         <h2>Category</h2>
         <Select
@@ -985,7 +1134,7 @@ function App() {
         />
       </div>
 
-      <div id="select">
+      <div id="select" href="sort">
         {/*Sort by selector*/}
         <h2>Sort by</h2>
         <Select
@@ -1017,34 +1166,12 @@ function App() {
           )
             return (
               <>
-                <div id="boxes">
-                  <div className="restaurantBox" onClick={togglePopup}>
-                    <h3>{restaurant.name}</h3>
-                  </div>
-
-                  {isOpen && (
-                    <Popup
-                      content={
-                        <>
-                          <b>Design your Popup</b>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
-                          </p>
-                          <button>Test button</button>
-                        </>
-                      }
-                      handleClose={togglePopup}
-                    />
-                  )}
-                </div>
+                <Restaurant
+                  name={restaurant.name}
+                  restaurant={restaurant}
+                  userLat={userLat}
+                  userLong={userLong}
+                />
               </>
             );
         })}
@@ -1069,28 +1196,12 @@ function App() {
           )
             return (
               <>
-                <div id="boxes">
-                  <div className="restaurantBox" onClick={togglePopup}>
-                    <h3>{restaurant.name}</h3>
-                  </div>
-
-                  {isOpen && (
-                    <Popup
-                      content={
-                        <>
-                          <div className="restaurantTitle">
-                            <b> {restaurant.name} </b>
-                          </div>
-                          <button className="popupButton">
-                            {" "}
-                            Text Me Directions!{" "}
-                          </button>
-                        </>
-                      }
-                      handleClose={togglePopup}
-                    />
-                  )}
-                </div>
+                <Restaurant
+                  name={restaurant.name}
+                  restaurant={restaurant}
+                  userLat={userLat}
+                  userLong={userLong}
+                />
               </>
             );
         })}
