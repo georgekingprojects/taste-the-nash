@@ -24,7 +24,6 @@ var ANZIEBLUE = {
   isPizza: false,
   isHealthy: false,
 };
-
 var BANHMIANDROLL = {
   name: "Banh Mi and Roll+",
   price: "$",
@@ -42,7 +41,6 @@ var BANHMIANDROLL = {
   isPizza: false,
   isHealthy: false,
 };
-
 var BARISTAPARLOR = {
   name: "Barista Parlor",
   price: "$",
@@ -60,7 +58,6 @@ var BARISTAPARLOR = {
   isPizza: false,
   isHealthy: false,
 };
-
 var BISCUITLOVE = {
   name: "Biscuit Love",
   price: "$$",
@@ -78,7 +75,6 @@ var BISCUITLOVE = {
   isPizza: false,
   isHealthy: false,
 };
-
 var CABANATAPS = {
   name: "Cabana Taps",
   price: "$$",
@@ -96,7 +92,6 @@ var CABANATAPS = {
   isPizza: false,
   isHealthy: false,
 };
-
 var CENTRALBBQ = {
   name: "Central BBQ",
   price: "$$",
@@ -114,7 +109,6 @@ var CENTRALBBQ = {
   isPizza: false,
   isHealthy: false,
 };
-
 var GRAINBERRY = {
   name: "Grain & Berry",
   price: "$$",
@@ -132,7 +126,6 @@ var GRAINBERRY = {
   isPizza: false,
   isHealthy: true,
 };
-
 var THEGRILLEDCHEESERIE = {
   name: "The Grilled Cheeserie",
   price: "$",
@@ -150,7 +143,6 @@ var THEGRILLEDCHEESERIE = {
   isPizza: false,
   isHealthy: false,
 };
-
 var HOPDODDY = {
   name: "Hopdoddy Burger Bar",
   price: "$$",
@@ -168,7 +160,6 @@ var HOPDODDY = {
   isPizza: false,
   isHealthy: false,
 };
-
 var JENIS = {
   name: "Jeni's Splendid Ice Creams",
   price: "$$",
@@ -186,7 +177,6 @@ var JENIS = {
   isPizza: false,
   isHealthy: false,
 };
-
 var MEETNOODLES = {
   name: "Meet Noodles",
   price: "$$",
@@ -204,7 +194,6 @@ var MEETNOODLES = {
   isPizza: false,
   isHealthy: false,
 };
-
 var NICOLETTOS = {
   name: "Nicoletto's Italian Kitchen",
   price: "$$",
@@ -222,7 +211,6 @@ var NICOLETTOS = {
   isPizza: false,
   isHealthy: false,
 };
-
 var SHOKKURAMEN = {
   name: "Shokku Ramen",
   price: "$$",
@@ -240,7 +228,6 @@ var SHOKKURAMEN = {
   isPizza: false,
   isHealthy: false,
 };
-
 var TACOMAMA = {
   name: "Taco Mama",
   price: "$$",
@@ -258,7 +245,6 @@ var TACOMAMA = {
   isPizza: false,
   isHealthy: false,
 };
-
 var URBANJUICER = {
   name: "The Urban Juicer",
   price: "$$",
@@ -276,7 +262,6 @@ var URBANJUICER = {
   isPizza: false,
   isHealthy: true,
 };
-
 var CHUYS = {
   name: "Chuy's",
   price: "$$",
@@ -294,7 +279,6 @@ var CHUYS = {
   isPizza: false,
   isHealthy: false,
 };
-
 var DONATOSPIZZA = {
   name: "Donato's Pizza",
   price: "$$",
@@ -312,7 +296,6 @@ var DONATOSPIZZA = {
   isPizza: true,
   isHealthy: false,
 };
-
 var HELENSHOTCHICKEN = {
   name: "Helen's Hot Chicken",
   price: "$",
@@ -330,7 +313,6 @@ var HELENSHOTCHICKEN = {
   isPizza: false,
   isHealthy: false,
 };
-
 var MELLOWMUSHROOM = {
   name: "Mellow Mushroom",
   price: "$$",
@@ -348,7 +330,6 @@ var MELLOWMUSHROOM = {
   isPizza: true,
   isHealthy: false,
 };
-
 var NADA = {
   name: "Nada",
   price: "$$",
@@ -366,7 +347,6 @@ var NADA = {
   isPizza: false,
   isHealthy: false,
 };
-
 var THEAINSWORTH = {
   name: "The Ainsworth",
   price: "$$",
@@ -384,7 +364,6 @@ var THEAINSWORTH = {
   isPizza: false,
   isHealthy: false,
 };
-
 var SARABHASCREAMERY = {
   name: "Sarabha's Creamery",
   price: "$$",
@@ -402,7 +381,6 @@ var SARABHASCREAMERY = {
   isPizza: false,
   isHealthy: false,
 };
-
 var THESLIDERHOUSE = {
   name: "The Slider House",
   price: "$$",
@@ -420,7 +398,6 @@ var THESLIDERHOUSE = {
   isPizza: false,
   isHealthy: false,
 };
-
 var URBANCOOKHOUSE = {
   name: "Urban Cookhouse",
   price: "$$",
@@ -438,7 +415,6 @@ var URBANCOOKHOUSE = {
   isPizza: false,
   isHealthy: false,
 };
-
 var BOMBAYPALACE = {
   name: "Bombay Palace",
   price: "$$",
@@ -456,7 +432,6 @@ var BOMBAYPALACE = {
   isPizza: false,
   isHealthy: false,
 };
-
 var CHILIS = {
   name: "Chili's Grill & Bar",
   price: "$$",
@@ -474,7 +449,6 @@ var CHILIS = {
   isPizza: false,
   isHealthy: false,
 };
-
 var INCHINSBAMBOOGARDEN = {
   name: "Inchin's Bamboo Garden",
   price: "$$",
@@ -492,7 +466,6 @@ var INCHINSBAMBOOGARDEN = {
   isPizza: false,
   isHealthy: false,
 };
-
 var CRABFEVER = {
   name: "Crab Fever",
   price: "$$",
@@ -510,7 +483,6 @@ var CRABFEVER = {
   isPizza: false,
   isHealthy: false,
 };
-
 var FABLE = {
   name: "Fable Lounge",
   price: "$$",
@@ -528,7 +500,6 @@ var FABLE = {
   isPizza: false,
   isHealthy: false,
 };
-
 var KOISUSHI = {
   name: "Koi Sushi & Tai",
   price: "$$",
@@ -546,7 +517,6 @@ var KOISUSHI = {
   isPizza: false,
   isHealthy: false,
 };
-
 var PAPAJOHNS = {
   name: "Papa John's Pizza",
   price: "$",
@@ -564,7 +534,6 @@ var PAPAJOHNS = {
   isPizza: true,
   isHealthy: false,
 };
-
 var SITARINDIAN = {
   name: "Sitar Indian Restaurant",
   price: "$$",
@@ -582,7 +551,6 @@ var SITARINDIAN = {
   isPizza: false,
   isHealthy: false,
 };
-
 var SUNANDFORK = {
   name: "Sun & Fork",
   price: "$$",
@@ -600,7 +568,6 @@ var SUNANDFORK = {
   isPizza: false,
   isHealthy: false,
 };
-
 var WENDYS = {
   name: "Wendy's",
   price: "$",
@@ -618,7 +585,6 @@ var WENDYS = {
   isPizza: false,
   isHealthy: false,
 };
-
 var CAFECOCO = {
   name: "Cafe Coco",
   price: "$",
@@ -636,7 +602,6 @@ var CAFECOCO = {
   isPizza: false,
   isHealthy: false,
 };
-
 var ELLISTONPLACESODASHOP = {
   name: "Elliston Place Soda Shop",
   price: "$",
@@ -654,7 +619,6 @@ var ELLISTONPLACESODASHOP = {
   isPizza: false,
   isHealthy: false,
 };
-
 var FRUTTABOWLS = {
   name: "Frutta Bowls",
   price: "$$",
@@ -672,7 +636,6 @@ var FRUTTABOWLS = {
   isPizza: false,
   isHealthy: true,
 };
-
 var ILOVESUSHI = {
   name: "I Love Sushi",
   price: "$$",
@@ -690,7 +653,6 @@ var ILOVESUSHI = {
   isPizza: false,
   isHealthy: false,
 };
-
 var JAMBA = {
   name: "Jamba",
   price: "$",
@@ -708,7 +670,6 @@ var JAMBA = {
   isPizza: false,
   isHealthy: true,
 };
-
 var JETSPIZZA = {
   name: "Jet's Pizza",
   price: "$",
@@ -726,7 +687,6 @@ var JETSPIZZA = {
   isPizza: true,
   isHealthy: false,
 };
-
 var MICHAELANGELOSPIZZA = {
   name: "Michaelangelo's Pizza",
   price: "$",
@@ -744,7 +704,6 @@ var MICHAELANGELOSPIZZA = {
   isPizza: true,
   isHealthy: false,
 };
-
 var OSCARSTACOSHOP = {
   name: "Oscar's Taco Shop",
   price: "$",
@@ -762,7 +721,6 @@ var OSCARSTACOSHOP = {
   isPizza: false,
   isHealthy: false,
 };
-
 var POKEBROS = {
   name: "Poke Bros",
   price: "$$",
@@ -780,7 +738,6 @@ var POKEBROS = {
   isPizza: false,
   isHealthy: false,
 };
-
 var ROMAPIZZAANDPASTA = {
   name: "Roma Pizza & Pasta",
   price: "$",
@@ -798,7 +755,6 @@ var ROMAPIZZAANDPASTA = {
   isPizza: true,
   isHealthy: false,
 };
-
 var SATAYTHAIGRILL = {
   name: "Satay Thai Grill",
   price: "$",
@@ -816,7 +772,6 @@ var SATAYTHAIGRILL = {
   isPizza: false,
   isHealthy: false,
 };
-
 var SWEETDOTS = {
   name: "Sweet Dots",
   price: "$$",
@@ -834,7 +789,6 @@ var SWEETDOTS = {
   isPizza: false,
   isHealthy: false,
 };
-
 var JPCAFE = {
   name: "JP Cafe",
   price: "$$",
@@ -852,7 +806,6 @@ var JPCAFE = {
   isPizza: false,
   isHealthy: false,
 };
-
 var HOLYSMOKES = {
   name: "Holy Smokes",
   price: "$",
@@ -950,11 +903,13 @@ function App() {
   return (
     <div className="App">
       <h1>Tast the Nash!</h1>
+      <div id="things">
       <h3>Sarah put map stuff here</h3>
       <h4>We will put search and restaurant component stuff here.</h4>
+      </div>
 
       {/*Restaurant component stuff*/}
-      <div style={{ width: "300px" }}>
+      <div id="category">
         {/*Category selector*/}
         <h2>Category</h2>
         <Select
@@ -966,7 +921,7 @@ function App() {
         />
       </div>
 
-      <div style={{ width: "300px" }}>
+      <div id="select">
         {/*Sort by selector*/}
         <h2>Sort by</h2>
         <Select
@@ -996,7 +951,7 @@ function App() {
           (restaurant.isGetApp && selectedCategory == "get")
         )
           return (
-            <div style={{ display: "flex" }}>
+            <div id="boxes">
               <Restaurant name={restaurant.name} price={restaurant.price} />
             </div>
           );
