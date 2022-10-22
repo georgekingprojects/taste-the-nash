@@ -11,10 +11,18 @@
   padding: 1px;
 }
 
-.titleimg {
-  vertical-align: 20px;
-  max-width: 20%;
+#taste {
+  background-image: linear-gradient(to bottom, rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.75)), url("campusbackground.png");
+  color: white;
+  padding: 2rem;
+  margin: 0;
   width: auto;
+}
+
+#things {
+  padding: 2rem;
+  background-image: url('spoonforkbackground.png');
+  background-size: 65rem;
 }
 
 /* Styling for the hamburger and side bar */

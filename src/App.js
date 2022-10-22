@@ -1,4 +1,4 @@
-import ttnlogoresized from "./ttnlogoresized.png";
+import campusbackground from "./campusbackground.png";
 import "./App.css";
 import Restaurant from "./Restaurant.js";
 import React, { useState, useEffect } from "react";
@@ -1093,12 +1093,12 @@ function App() {
 
   return (
     <div className="App">
-<div class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
-      <span></span>
-    </label>
-<img class="titleimg" src={ttnlogoresized} />
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+      <h1 id="taste">Taste the Nash</h1>
     <ul class="menu__box">
       <li><a class="menu__item" href="#">Home</a></li>
       <li><a class="menu__item" href="#">Sort</a></li>
@@ -1112,9 +1112,6 @@ function App() {
           height="480"
           href="map"
         ></iframe>
-        <h4 href="search">
-          We will put search and restaurant component stuff here.
-        </h4>
       </div>
 
       {/*Restaurant component stuff*/}
