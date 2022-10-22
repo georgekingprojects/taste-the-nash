@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    margin-top: 4em;
+    margin-top: 3em;
   }
   
   #select {
@@ -19,7 +19,6 @@
   #nav {
     position: fixed;
     background-color: #333333;
-    align: center;
     z-index: 10;
     justify-content: center;
     left: 0;
@@ -28,7 +27,9 @@
   }
 
   #taste {
-    top: 3em;
+    background-image: url('campusbackground.png');
+    color: white;
+    padding: 2rem;
   }
 
   .navlink {
@@ -38,19 +39,6 @@
     padding: 3rem;
     line-height: 3em;
     vertical-align: middle;
-  }
-  
-  
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
   }
 
   .popup-box {
