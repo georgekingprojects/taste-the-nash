@@ -7,14 +7,17 @@
   width: "300px";
 }
 
-#things {
-  background-color: gainsboro;
-  padding: 2rem;
-}
-
 #category {
   padding: 1px;
 }
+
+.titleimg {
+  vertical-align: 20px;
+  max-width: 20%;
+  width: auto;
+}
+
+/* Styling for the hamburger and side bar */
 #menu__toggle {
   opacity: 0;
 }
@@ -87,32 +90,6 @@
 .menu__item:hover {
   background-color: #ddad86;
 }
-/*
-#nav {
-  position: fixed;
-  background-color: #333333;
-  z-index: 10;
-  justify-content: center;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-*/
-#taste {
-  background-image: url("campusbackground.png");
-  color: white;
-  padding: 2rem;
-  margin: 0;
-}
-/*
-.navlink {
-  margin: 0em 5em 0em 5em;
-  color: white;
-  text-decoration: inherit;
-  padding: 3rem;
-  line-height: 3em;
-  vertical-align: middle;
-}*/
 
 .popup-box {
   position: fixed;
@@ -153,6 +130,8 @@
   font-size: 20px;
 }
 
+
+ /* Styling for the restaurant boxes */
 .restaurantBox {
   height: 4rem;
   margin: 2rem;

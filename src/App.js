@@ -1098,30 +1098,13 @@ function App() {
     <label class="menu__btn" for="menu__toggle">
       <span></span>
     </label>
-<img src={ttnlogoresized} />
+<img class="titleimg" src={ttnlogoresized} />
     <ul class="menu__box">
       <li><a class="menu__item" href="#">Home</a></li>
       <li><a class="menu__item" href="#">Sort</a></li>
       <li><a class="menu__item" href="#">About</a></li>
     </ul>
   </div>
-      {/*
-      <div id="nav">
-        <a href="#map" class="navlink">
-          Maps
-        </a>
-        <a href="#search" class="navlink">
-          Search
-        </a>
-        <a href="#category" class="navlink">
-          Category
-        </a>
-        <a href="#sort" class="navlink">
-          Sort
-        </a>
-      </div>
-  */}
-      <h1 id="taste">Tast the Nash!</h1>
       <div id="things">
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=11MSZMur_QnNCaeMNLguURSVG0_dRA5E&ehbc=2E312F"
