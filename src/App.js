@@ -5,15 +5,21 @@ import React, { useState } from "react";
 import Select from "react-select";
 
 //options for categories
-const options = [
+const categoryOptions = [
+  { value: "all", label: "Select All" },
   { value: "pizza", label: "Pizza" },
   { value: "drinks", label: "Drinks" },
   { value: "mexican", label: "Mexican" },
 ];
 
+//options for sorts
+const sortOptions = [{ value: "price", label: "price" }];
+
 function App() {
   //state for categories
   const [selectedCategory, setSelectedCategory] = useState(null);
+  //state for sort by
+  const [selectedSort, setSelectedSort] = useState(null);
   return (
     <div className="App">
       <h1>Taste the Nash!</h1>
@@ -29,7 +35,19 @@ function App() {
           onChange={(v) => {
             setSelectedCategory(v.value);
           }}
-          options={options}
+          options={categoryOptions}
+        />
+      </div>
+
+      <div style={{ width: "300px" }}>
+        {/*Sort by selector*/}
+        <h2>Sort by</h2>
+        <Select
+          defaultValue={selectedSort}
+          onChange={(v) => {
+            setSelectedSort(v.value);
+          }}
+          options={sortOptions}
         />
       </div>
 
