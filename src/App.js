@@ -961,7 +961,7 @@ function App() {
             <div id="boxes">
             <input
       type="button"
-      value="Click to Open Popup"
+      value= {restaurant.name}
       onClick={togglePopup}
     />
     {isOpen && <Popup
