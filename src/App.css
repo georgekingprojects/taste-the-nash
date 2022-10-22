@@ -91,3 +91,10 @@
     margin-left: 4rem;
     background-color: #d39039;
   }
+
+  .popupButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+  }
