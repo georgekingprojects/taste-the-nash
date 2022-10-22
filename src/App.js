@@ -1079,9 +1079,12 @@ function App() {
                       content={
                         <>
                           <div className="restaurantTitle">
-                          <b> {restaurant.name} </b>
+                            <b> {restaurant.name} </b>
                           </div>
-                          <button className="popupButton"> Text Me Directions! </button>
+                          <button className="popupButton">
+                            {" "}
+                            Text Me Directions!{" "}
+                          </button>
                         </>
                       }
                       handleClose={togglePopup}
