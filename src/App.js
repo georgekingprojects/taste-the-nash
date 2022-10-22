@@ -875,6 +875,57 @@ const sortedRestaurantArray = [
   ANZIEBLUE,
 ];
 
+const sortedRestaurantArrayDecresasing = [
+  ANZIEBLUE,
+  THEAINSWORTH,
+  KOISUSHI,
+  CABANATAPS,
+  FABLE,
+  NADA,
+  HOPDODDY,
+  BISCUITLOVE,
+  SITARINDIAN,
+  ILOVESUSHI,
+  JENIS,
+  MEETNOODLES,
+  SHOKKURAMEN,
+  TACOMAMA,
+  URBANJUICER,
+  CHUYS,
+  SARABHASCREAMERY,
+  THESLIDERHOUSE,
+  URBANCOOKHOUSE,
+  BOMBAYPALACE,
+  CHILIS,
+  INCHINSBAMBOOGARDEN,
+  CRABFEVER,
+  GRAINBERRY,
+  SUNANDFORK,
+  FRUTTABOWLS,
+  NICOLETTOS,
+  CENTRALBBQ,
+  DONATOSPIZZA,
+  MELLOWMUSHROOM,
+  JPCAFE,
+  POKEBROS,
+  SWEETDOTS,
+  BANHMIANDROLL,
+  BARISTAPARLOR,
+  HELENSHOTCHICKEN,
+  JAMBA,
+  CAFECOCO,
+  SATAYTHAIGRILL,
+  THEGRILLEDCHEESERIE,
+  ELLISTONPLACESODASHOP,
+  HOLYSMOKES,
+  PAPAJOHNS,
+  OSCARSTACOSHOP,
+  MICHAELANGELOSPIZZA,
+  JETSPIZZA,
+  ROMAPIZZAANDPASTA,
+  WENDYS,
+];
+
 //options for categories
 const categoryOptions = [
   { value: "all", label: "Select All" },
@@ -893,7 +944,10 @@ const categoryOptions = [
 ];
 
 //options for sorts
-const sortOptions = [{ value: "price", label: "price" }];
+const sortOptions = [
+  { value: "price", label: "Price (increasing)" },
+  { value: "pricedec", label: "Price (decreasing)" },
+];
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -942,61 +996,62 @@ function App() {
         />
       </div>
 
-      {/*The restaurant boxes*/}
-      {sortedRestaurantArray.map((restaurant) => {
-        if (
-          selectedCategory == "all" ||
-          (restaurant.isPizza && selectedCategory == "pizza") ||
-          (restaurant.isDrinks && selectedCategory == "drinks") ||
-          (restaurant.isMexican && selectedCategory == "mexican") ||
-          (restaurant.isHealthy && selectedCategory == "healthy") ||
-          (restaurant.isSeafood && selectedCategory == "seafood") ||
-          (restaurant.isBreakfast && selectedCategory == "breakfast") ||
-          (restaurant.isDessert && selectedCategory == "dessert") ||
-          (restaurant.isItalian && selectedCategory == "italian") ||
-          (restaurant.isAmerican && selectedCategory == "american") ||
-          (restaurant.isAsian && selectedCategory == "asian") ||
-          (restaurant.isIndian && selectedCategory == "indian") ||
-          (restaurant.isGetApp && selectedCategory == "get")
-        )
-          return (
-            <>
-              <div id="boxes">
-                {/*<input
+      {/*Increasing Price*/}
+      {selectedSort == "price" &&
+        sortedRestaurantArray.map((restaurant) => {
+          if (
+            selectedCategory == "all" ||
+            (restaurant.isPizza && selectedCategory == "pizza") ||
+            (restaurant.isDrinks && selectedCategory == "drinks") ||
+            (restaurant.isMexican && selectedCategory == "mexican") ||
+            (restaurant.isHealthy && selectedCategory == "healthy") ||
+            (restaurant.isSeafood && selectedCategory == "seafood") ||
+            (restaurant.isBreakfast && selectedCategory == "breakfast") ||
+            (restaurant.isDessert && selectedCategory == "dessert") ||
+            (restaurant.isItalian && selectedCategory == "italian") ||
+            (restaurant.isAmerican && selectedCategory == "american") ||
+            (restaurant.isAsian && selectedCategory == "asian") ||
+            (restaurant.isIndian && selectedCategory == "indian") ||
+            (restaurant.isGetApp && selectedCategory == "get")
+          )
+            return (
+              <>
+                <div id="boxes">
+                  {/*<input
                   type="button"
                   value={restaurant.name}
                   onClick={togglePopup}
                 />*/}
-                <div onClick={togglePopup}>
-                  <h3>{restaurant.name}</h3>
-                </div>
+                  <div onClick={togglePopup}>
+                    <h3>{restaurant.name}</h3>
+                  </div>
 
-                {isOpen && (
-                  <Popup
-                    content={
-                      <>
-                        <b>Design your Popup</b>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
-                        </p>
-                        <button>Test button</button>
-                      </>
-                    }
-                    handleClose={togglePopup}
-                  />
-                )}
-              </div>
-            </>
-          );
-      })}
+                  {isOpen && (
+                    <Popup
+                      content={
+                        <>
+                          <b>Design your Popup</b>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.
+                          </p>
+                          <button>Test button</button>
+                        </>
+                      }
+                      handleClose={togglePopup}
+                    />
+                  )}
+                </div>
+              </>
+            );
+        })}
     </div>
   );
 }
