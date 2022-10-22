@@ -78,4 +78,5 @@
     cursor: pointer;
     background-color: #c094c4;
     border-radius: 15px;
+    border: 2px solid rgb(91, 70, 211);
   }
