@@ -84,3 +84,9 @@
     padding: 2px;
     margin-right: 2rem;
   }
+
+  .restaurantTitle {
+    font-size: 4rem;
+    text-align: left;
+    margin-left: 4rem;
+  }

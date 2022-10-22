@@ -1077,7 +1077,9 @@ function App() {
                     <Popup
                       content={
                         <>
-                          <b>Design your Popup</b>
+                          <div className="restaurantTitle">
+                          <b> {restaurant.name} </b>
+                          </div>
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
