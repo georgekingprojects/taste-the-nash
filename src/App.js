@@ -22,7 +22,7 @@ function App() {
   const [selectedSort, setSelectedSort] = useState(null);
   return (
     <div className="App">
-      <h1>Taste the Nash!</h1>
+      <h1>Tast the Nash!</h1>
       <h3>Sarah put map stuff here</h3>
       <h4>We will put search and restaurant component stuff here.</h4>
 
