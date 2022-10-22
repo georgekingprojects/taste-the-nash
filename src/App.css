@@ -75,6 +75,7 @@
   }
 
   .restaurantBox {
+    height: 4rem;
     margin: 2rem;
     cursor: pointer;
     background-color: #c094c4;
