@@ -30,58 +30,16 @@
   background-image: url("campusbackground.png");
   color: white;
   padding: 2rem;
+  margin: 0;
 }
 
 .navlink {
   margin: 0em 5em 0em 5em;
   color: white;
   text-decoration: inherit;
-  /*padding: 3rem;*/
+  padding: 3rem;
   line-height: 3em;
   vertical-align: middle;
-}
-
-#boxes {
-  display: "flex";
-  flex-direction: "row";
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-.restaurantBox {
-  height: 4rem;
-  margin: 2rem;
-  cursor: pointer;
-  background-color: #c094c4;
-  border-radius: 15px;
-  border: 2px solid rgb(91, 70, 211);
-  justify-content: space-between;
-  width: 20%;
-  float: left;
-  display: inline;
-  padding: 2px;
-  margin-right: 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-#things {
-  background-color: gainsboro;
-}
-
-#category {
-  padding: 1px;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .popup-box {
@@ -136,6 +94,8 @@
   display: inline;
   padding: 2px;
   margin-right: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .restaurantTitle {
