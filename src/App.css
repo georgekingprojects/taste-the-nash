@@ -76,4 +76,6 @@
 
   .restaurantBox {
     cursor: pointer;
+    background-color: #c094c4;
+    border-radius: 15px;
   }
