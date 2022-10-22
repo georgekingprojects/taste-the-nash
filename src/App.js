@@ -961,18 +961,25 @@ function App() {
   const [selectedSort, setSelectedSort] = useState(null);
   return (
     <div className="App">
-      <h1>Tast the Nash!</h1>
+      <div id="nav">
+        <a href="#map" class="navlink">Maps</a>
+        <a href="#search" class="navlink">Search</a>
+        <a href="#category" class="navlink">Category</a>
+        <a href="#sort" class="navlink">Sort</a>
+      </div>
+      <h1 id="taste">Tast the Nash!</h1>
       <div id="things">
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=11MSZMur_QnNCaeMNLguURSVG0_dRA5E&ehbc=2E312F"
           width="640"
           height="480"
+          href="map"
         ></iframe>
-        <h4>We will put search and restaurant component stuff here.</h4>
+        <h4 href="search">We will put search and restaurant component stuff here.</h4>
       </div>
 
       {/*Restaurant component stuff*/}
-      <div id="category">
+      <div id="category" href="category">
         {/*Category selector*/}
         <h2>Category</h2>
         <Select
@@ -984,7 +991,7 @@ function App() {
         />
       </div>
 
-      <div id="select">
+      <div id="select" href="sort">
         {/*Sort by selector*/}
         <h2>Sort by</h2>
         <Select
@@ -1068,34 +1075,32 @@ function App() {
           )
             return (
               <>
-                <div id="boxes">
-                  <div className="restaurantBox" onClick={togglePopup}>
-                    <h3>{restaurant.name}</h3>
-                  </div>
-
-                  {isOpen && (
-                    <Popup
-                      content={
-                        <>
-                          <b>Design your Popup</b>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
-                          </p>
-                          <button>Test button</button>
-                        </>
-                      }
-                      handleClose={togglePopup}
-                    />
-                  )}
+                <div className="restaurantBox" onClick={togglePopup}>
+                  <h3>{restaurant.name}</h3>
                 </div>
+
+                {isOpen && (
+                  <Popup
+                    content={
+                      <>
+                        <b>Design your Popup</b>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore
+                          eu fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                        <button>Test button</button>
+                      </>
+                    }
+                    handleClose={togglePopup}
+                  />
+                )}
               </>
             );
         })}

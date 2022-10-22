@@ -1,11 +1,6 @@
 .App {
     text-align: center;
-  }
-  
-  #boxes {
-    display: "flex";
-    flex-direction: "row";
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-top: 4em;
   }
   
   #select {
@@ -14,12 +9,36 @@
   
   #things {
     background-color: gainsboro;
+    padding: 2rem;
   }
   
   #category {
     padding: 1px;
   }
   
+  #nav {
+    position: fixed;
+    background-color: #333333;
+    align: center;
+    z-index: 10;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  #taste {
+    top: 3em;
+  }
+
+  .navlink {
+    margin: 0em 5em 0em 5em;
+    color: white;
+    text-decoration: inherit;
+    padding: 3rem;
+    line-height: 3em;
+    vertical-align: middle;
+  }
   
   
   
@@ -87,4 +106,5 @@
     display:inline;
     padding: 2px;
     margin-right: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
