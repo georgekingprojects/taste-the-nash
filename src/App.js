@@ -1103,10 +1103,8 @@ function App() {
 
     <ul class="menu__box">
       <li><a class="menu__item" href="#">Home</a></li>
+      <li><a class="menu__item" href="#">Sort</a></li>
       <li><a class="menu__item" href="#">About</a></li>
-      <li><a class="menu__item" href="#">Team</a></li>
-      <li><a class="menu__item" href="#">Contact</a></li>
-      <li><a class="menu__item" href="#">Twitter</a></li>
     </ul>
   </div>
       {/*
