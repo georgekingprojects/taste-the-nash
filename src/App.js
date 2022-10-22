@@ -902,11 +902,13 @@ function App() {
   return (
     <div className="App">
       <h1>Tast the Nash!</h1>
+      <div id="things">
       <h3>Sarah put map stuff here</h3>
       <h4>We will put search and restaurant component stuff here.</h4>
+      </div>
 
       {/*Restaurant component stuff*/}
-      <div style={{ width: "300px" }}>
+      <div id="category">
         {/*Category selector*/}
         <h2>Category</h2>
         <Select
@@ -918,7 +920,7 @@ function App() {
         />
       </div>
 
-      <div style={{ width: "300px" }}>
+      <div id="select">
         {/*Sort by selector*/}
         <h2>Sort by</h2>
         <Select
@@ -932,10 +934,6 @@ function App() {
 
       {/*The restaurant boxes*/}
       {sortedRestaurantArray.map((restaurant) => {
-<<<<<<< HEAD
-        if (restaurant.isPizza && selectedCategory == "pizza")
-          return <div id="boxes">{restaurant.name}</div>;
-=======
         if (
           selectedCategory == "all" ||
           (restaurant.isPizza && selectedCategory == "pizza") ||
@@ -952,11 +950,10 @@ function App() {
           (restaurant.isGetApp && selectedCategory == "get")
         )
           return (
-            <div style={{ display: "flex" }}>
+            <div id="boxes">
               <Restaurant name={restaurant.name} price={restaurant.price} />
             </div>
           );
->>>>>>> 53b412b100b55b6c6ec1bd26a27f1719ebc63582
       })}
     </div>
   );
