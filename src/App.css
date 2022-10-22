@@ -55,6 +55,7 @@
     padding: 20px;
     border: 1px solid #999;
     overflow: auto;
+    cursor: pointer;
   }
    
   .close-icon {
@@ -71,4 +72,8 @@
     text-align: center;
     border: 1px solid #999;
     font-size: 20px;
+  }
+
+  .restaurantBox {
+    cursor: pointer;
   }

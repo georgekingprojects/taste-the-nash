@@ -967,7 +967,7 @@ function App() {
                   value={restaurant.name}
                   onClick={togglePopup}
                 />*/}
-                <div onClick={togglePopup}>
+                <div className="restaurantBox" onClick={togglePopup}>
                   <h3>{restaurant.name}</h3>
                 </div>
 
