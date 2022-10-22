@@ -66,7 +66,7 @@
     position: relative;
     width: 70%;
     margin: 0 auto;
-    height: auto;
+    height: 50rem;
     max-height: 70vh;
     margin-top: calc(100vh - 85vh - 20px);
     background: #fff;
@@ -74,7 +74,6 @@
     padding: 20px;
     border: 1px solid #999;
     overflow: auto;
-    cursor: pointer;
   }
    
   .close-icon {
@@ -107,4 +106,18 @@
     padding: 2px;
     margin-right: 2rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .restaurantTitle {
+    font-size: 4rem;
+    text-align: left;
+    margin-left: 4rem;
+    background-color: #d39039;
+  }
+
+  .popupButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
   }
