@@ -4,7 +4,6 @@ import Restaurant from "./Restaurant.js";
 import React, { useState } from "react";
 import Select from "react-select";
 
-
 // JSON data for each restaurant
 
 var ANZIEBLUE = {
@@ -22,7 +21,7 @@ var ANZIEBLUE = {
   isBreakfast: true,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var BANHMIANDROLL = {
@@ -40,10 +39,10 @@ var BANHMIANDROLL = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
-var BARISTAPARLOR ={
+var BARISTAPARLOR = {
   name: "Barista Parlor",
   price: "$",
   address: "1817 21st Ave S, Nashville, TN 37212",
@@ -58,7 +57,7 @@ var BARISTAPARLOR ={
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var BISCUITLOVE = {
@@ -76,7 +75,7 @@ var BISCUITLOVE = {
   isBreakfast: true,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var CABANATAPS = {
@@ -94,7 +93,7 @@ var CABANATAPS = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var CENTRALBBQ = {
@@ -112,7 +111,7 @@ var CENTRALBBQ = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var GRAINBERRY = {
@@ -130,7 +129,7 @@ var GRAINBERRY = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: true
+  isHealthy: true,
 };
 
 var THEGRILLEDCHEESERIE = {
@@ -148,7 +147,7 @@ var THEGRILLEDCHEESERIE = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var HOPDODDY = {
@@ -166,7 +165,7 @@ var HOPDODDY = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var JENIS = {
@@ -184,7 +183,7 @@ var JENIS = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var MEETNOODLES = {
@@ -202,7 +201,7 @@ var MEETNOODLES = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var NICOLETTOS = {
@@ -220,7 +219,7 @@ var NICOLETTOS = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var SHOKKURAMEN = {
@@ -238,7 +237,7 @@ var SHOKKURAMEN = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var TACOMAMA = {
@@ -256,7 +255,7 @@ var TACOMAMA = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var URBANJUICER = {
@@ -274,7 +273,7 @@ var URBANJUICER = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: true
+  isHealthy: true,
 };
 
 var CHUYS = {
@@ -292,7 +291,7 @@ var CHUYS = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var DONATOSPIZZA = {
@@ -310,7 +309,7 @@ var DONATOSPIZZA = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: true,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var HELENSHOTCHICKEN = {
@@ -328,7 +327,7 @@ var HELENSHOTCHICKEN = {
   isBreakfast: false,
   isSeafood: true,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var MELLOWMUSHROOM = {
@@ -346,7 +345,7 @@ var MELLOWMUSHROOM = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: true,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var NADA = {
@@ -364,9 +363,8 @@ var NADA = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
-
 
 var THEAINSWORTH = {
   name: "The Ainsworth",
@@ -383,7 +381,7 @@ var THEAINSWORTH = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var SARABHASCREAMERY = {
@@ -401,7 +399,7 @@ var SARABHASCREAMERY = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var THESLIDERHOUSE = {
@@ -419,7 +417,7 @@ var THESLIDERHOUSE = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var URBANCOOKHOUSE = {
@@ -437,7 +435,7 @@ var URBANCOOKHOUSE = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var BOMBAYPALACE = {
@@ -455,7 +453,7 @@ var BOMBAYPALACE = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var CHILIS = {
@@ -473,7 +471,7 @@ var CHILIS = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var INCHINSBAMBOOGARDEN = {
@@ -491,7 +489,7 @@ var INCHINSBAMBOOGARDEN = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var CRABFEVER = {
@@ -509,7 +507,7 @@ var CRABFEVER = {
   isBreakfast: false,
   isSeafood: true,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var FABLE = {
@@ -527,7 +525,7 @@ var FABLE = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var KOISUSHI = {
@@ -545,7 +543,7 @@ var KOISUSHI = {
   isBreakfast: false,
   isSeafood: true,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var PAPAJOHNS = {
@@ -563,7 +561,7 @@ var PAPAJOHNS = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: true,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var SITARINDIAN = {
@@ -581,7 +579,7 @@ var SITARINDIAN = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var SUNANDFORK = {
@@ -599,7 +597,7 @@ var SUNANDFORK = {
   isBreakfast: true,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var WENDYS = {
@@ -617,7 +615,7 @@ var WENDYS = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var CAFECOCO = {
@@ -635,7 +633,7 @@ var CAFECOCO = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var ELLISTONPLACESODASHOP = {
@@ -671,7 +669,7 @@ var FRUTTABOWLS = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: true
+  isHealthy: true,
 };
 
 var ILOVESUSHI = {
@@ -689,7 +687,7 @@ var ILOVESUSHI = {
   isBreakfast: false,
   isSeafood: true,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var JAMBA = {
@@ -707,7 +705,7 @@ var JAMBA = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: true
+  isHealthy: true,
 };
 
 var JETSPIZZA = {
@@ -725,7 +723,7 @@ var JETSPIZZA = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: true,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var MICHAELANGELOSPIZZA = {
@@ -743,7 +741,7 @@ var MICHAELANGELOSPIZZA = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: true,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var OSCARSTACOSHOP = {
@@ -761,7 +759,7 @@ var OSCARSTACOSHOP = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var POKEBROS = {
@@ -779,7 +777,7 @@ var POKEBROS = {
   isBreakfast: false,
   isSeafood: true,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var ROMAPIZZAANDPASTA = {
@@ -797,7 +795,7 @@ var ROMAPIZZAANDPASTA = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: true,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var SATAYTHAIGRILL = {
@@ -815,7 +813,7 @@ var SATAYTHAIGRILL = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var SWEETDOTS = {
@@ -833,7 +831,7 @@ var SWEETDOTS = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var JPCAFE = {
@@ -851,7 +849,7 @@ var JPCAFE = {
   isBreakfast: true,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
 
 var HOLYSMOKES = {
@@ -869,8 +867,59 @@ var HOLYSMOKES = {
   isBreakfast: false,
   isSeafood: false,
   isPizza: false,
-  isHealthy: false
+  isHealthy: false,
 };
+
+const sortedRestaurantArray = [
+  HOLYSMOKES,
+  JPCAFE,
+  SWEETDOTS,
+  SATAYTHAIGRILL,
+  ROMAPIZZAANDPASTA,
+  POKEBROS,
+  OSCARSTACOSHOP,
+  MICHAELANGELOSPIZZA,
+  JETSPIZZA,
+  JAMBA,
+  ILOVESUSHI,
+  FRUTTABOWLS,
+  ELLISTONPLACESODASHOP,
+  CAFECOCO,
+  WENDYS,
+  SUNANDFORK,
+  SITARINDIAN,
+  PAPAJOHNS,
+  KOISUSHI,
+  FABLE,
+  CRABFEVER,
+  INCHINSBAMBOOGARDEN,
+  CHILIS,
+  BOMBAYPALACE,
+  URBANCOOKHOUSE,
+  THESLIDERHOUSE,
+  SARABHASCREAMERY,
+  THEAINSWORTH,
+  NADA,
+  MELLOWMUSHROOM,
+  HELENSHOTCHICKEN,
+  DONATOSPIZZA,
+  CHUYS,
+  URBANJUICER,
+  TACOMAMA,
+  SHOKKURAMEN,
+  NICOLETTOS,
+  MEETNOODLES,
+  JENIS,
+  HOPDODDY,
+  THEGRILLEDCHEESERIE,
+  GRAINBERRY,
+  CENTRALBBQ,
+  CABANATAPS,
+  BISCUITLOVE,
+  BARISTAPARLOR,
+  BANHMIANDROLL,
+  ANZIEBLUE,
+];
 
 //options for categories
 const categoryOptions = [
@@ -920,22 +969,10 @@ function App() {
       </div>
 
       {/*The restaurant boxes*/}
-      <div style={{ display: "flex", flexDirection: "row" }}>
-        {/*Only show this stuff if the category selected is drinks */}
-        {selectedCategory == "drinks" && (
-          <div>
-            <Restaurant name="Sweet Dots" price="$" />
-          </div>
-        )}
-        {/*Only show this stuff if the category selected is pizza */}
-        {selectedCategory == "pizza" && (
-          <div style={{ display: "flex" }}>
-            <Restaurant name="Papa Johns" price="$" />
-            <Restaurant name="Jet's Pizza" price="$" />
-            <Restaurant name="Michaelangelo's Pizza" price="$" />
-          </div>
-        )}
-      </div>
+      {sortedRestaurantArray.map((restaurant) => {
+        if (restaurant.isPizza && selectedCategory == "pizza")
+          return <div>{restaurant.name}</div>;
+      })}
     </div>
   );
 }
