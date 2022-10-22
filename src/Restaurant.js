@@ -10,7 +10,6 @@ function Restaurant(props) {
     >
       <h3>{props.name}</h3>
       <p>Price: {props.price}</p>
-      <p>{props.description}</p>
     </div>
   );
 }
