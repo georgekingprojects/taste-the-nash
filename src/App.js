@@ -1094,6 +1094,7 @@ function App() {
 
   return (
     <div className="App">
+      {/*
       <div id="nav">
         <a href="#map" class="navlink">
           Maps
@@ -1108,6 +1109,7 @@ function App() {
           Sort
         </a>
       </div>
+  */}
       <h1 id="taste">Tast the Nash!</h1>
       <div id="things">
         <iframe

@@ -16,6 +16,7 @@
   padding: 1px;
 }
 
+/*
 #nav {
   position: fixed;
   background-color: #333333;
@@ -25,14 +26,14 @@
   right: 0;
   top: 0;
 }
-
+*/
 #taste {
   background-image: url("campusbackground.png");
   color: white;
   padding: 2rem;
   margin: 0;
 }
-
+/*
 .navlink {
   margin: 0em 5em 0em 5em;
   color: white;
@@ -40,7 +41,7 @@
   padding: 3rem;
   line-height: 3em;
   vertical-align: middle;
-}
+}*/
 
 .popup-box {
   position: fixed;
