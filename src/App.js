@@ -3,7 +3,6 @@ import "./App.css";
 import Restaurant from "./Restaurant.js";
 import React, { useState } from "react";
 import Select from "react-select";
-import { Alert ,RepopupProvider} from 'repopup';
 
 // JSON data for each restaurant
 
@@ -904,7 +903,7 @@ function App() {
     <div className="App">
       <h1>Tast the Nash!</h1>
       <div id="things">
-      <h3>Sarah put map stuff here</h3>
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=11MSZMur_QnNCaeMNLguURSVG0_dRA5E&ehbc=2E312F" width="640" height="480"></iframe>
       <h4>We will put search and restaurant component stuff here.</h4>
       </div>
 
