@@ -825,26 +825,31 @@ var HOLYSMOKES = {
 };
 
 const sortedRestaurantArray = [
-  HOLYSMOKES,
-  JPCAFE,
-  SWEETDOTS,
-  SATAYTHAIGRILL,
-  ROMAPIZZAANDPASTA,
-  POKEBROS,
-  OSCARSTACOSHOP,
-  MICHAELANGELOSPIZZA,
-  JETSPIZZA,
-  JAMBA,
-  ILOVESUSHI,
-  FRUTTABOWLS,
-  ELLISTONPLACESODASHOP,
-  CAFECOCO,
   WENDYS,
-  SUNANDFORK,
-  SITARINDIAN,
+  ROMAPIZZAANDPASTA,
+  JETSPIZZA,
+  MICHAELANGELOSPIZZA,
+  OSCARSTACOSHOP,
   PAPAJOHNS,
-  KOISUSHI,
-  FABLE,
+  HOLYSMOKES,
+  ELLISTONPLACESODASHOP,
+  THEGRILLEDCHEESERIE,
+  SATAYTHAIGRILL,
+  CAFECOCO,
+  JAMBA,
+  HELENSHOTCHICKEN,
+  BARISTAPARLOR,
+  BANHMIANDROLL,
+  SWEETDOTS,
+  POKEBROS,
+  JPCAFE,
+  MELLOWMUSHROOM,
+  DONATOSPIZZA,
+  CENTRALBBQ,
+  NICOLETTOS,
+  FRUTTABOWLS,
+  SUNANDFORK,
+  GRAINBERRY,
   CRABFEVER,
   INCHINSBAMBOOGARDEN,
   CHILIS,
@@ -852,26 +857,21 @@ const sortedRestaurantArray = [
   URBANCOOKHOUSE,
   THESLIDERHOUSE,
   SARABHASCREAMERY,
-  THEAINSWORTH,
-  NADA,
-  MELLOWMUSHROOM,
-  HELENSHOTCHICKEN,
-  DONATOSPIZZA,
   CHUYS,
   URBANJUICER,
   TACOMAMA,
   SHOKKURAMEN,
-  NICOLETTOS,
   MEETNOODLES,
   JENIS,
-  HOPDODDY,
-  THEGRILLEDCHEESERIE,
-  GRAINBERRY,
-  CENTRALBBQ,
-  CABANATAPS,
+  ILOVESUSHI,
+  SITARINDIAN,
   BISCUITLOVE,
-  BARISTAPARLOR,
-  BANHMIANDROLL,
+  HOPDODDY,
+  NADA,
+  FABLE,
+  CABANATAPS,
+  KOISUSHI,
+  THEAINSWORTH,
   ANZIEBLUE,
 ];
 
@@ -904,8 +904,12 @@ function App() {
     <div className="App">
       <h1>Tast the Nash!</h1>
       <div id="things">
-      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=11MSZMur_QnNCaeMNLguURSVG0_dRA5E&ehbc=2E312F" width="640" height="480"></iframe>
-      <h4>We will put search and restaurant component stuff here.</h4>
+        <iframe
+          src="https://www.google.com/maps/d/u/0/embed?mid=11MSZMur_QnNCaeMNLguURSVG0_dRA5E&ehbc=2E312F"
+          width="640"
+          height="480"
+        ></iframe>
+        <h4>We will put search and restaurant component stuff here.</h4>
       </div>
 
       {/*Restaurant component stuff*/}
@@ -934,28 +938,29 @@ function App() {
       </div>
 
       {/*The restaurant boxes*/}
-      {sortedRestaurantArray.map((restaurant) => {
-        if (
-          selectedCategory == "all" ||
-          (restaurant.isPizza && selectedCategory == "pizza") ||
-          (restaurant.isDrinks && selectedCategory == "drinks") ||
-          (restaurant.isMexican && selectedCategory == "mexican") ||
-          (restaurant.isHealthy && selectedCategory == "healthy") ||
-          (restaurant.isSeafood && selectedCategory == "seafood") ||
-          (restaurant.isBreakfast && selectedCategory == "breakfast") ||
-          (restaurant.isDessert && selectedCategory == "dessert") ||
-          (restaurant.isItalian && selectedCategory == "italian") ||
-          (restaurant.isAmerican && selectedCategory == "american") ||
-          (restaurant.isAsian && selectedCategory == "asian") ||
-          (restaurant.isIndian && selectedCategory == "indian") ||
-          (restaurant.isGetApp && selectedCategory == "get")
-        )
-          return (
-            <div id="boxes">
-              <Restaurant name={restaurant.name} price={restaurant.price} />
-            </div>
-          );
-      })}
+      {selectedSort == "price" &&
+        sortedRestaurantArray.map((restaurant) => {
+          if (
+            selectedCategory == "all" ||
+            (restaurant.isPizza && selectedCategory == "pizza") ||
+            (restaurant.isDrinks && selectedCategory == "drinks") ||
+            (restaurant.isMexican && selectedCategory == "mexican") ||
+            (restaurant.isHealthy && selectedCategory == "healthy") ||
+            (restaurant.isSeafood && selectedCategory == "seafood") ||
+            (restaurant.isBreakfast && selectedCategory == "breakfast") ||
+            (restaurant.isDessert && selectedCategory == "dessert") ||
+            (restaurant.isItalian && selectedCategory == "italian") ||
+            (restaurant.isAmerican && selectedCategory == "american") ||
+            (restaurant.isAsian && selectedCategory == "asian") ||
+            (restaurant.isIndian && selectedCategory == "indian") ||
+            (restaurant.isGetApp && selectedCategory == "get")
+          )
+            return (
+              <div id="boxes">
+                <Restaurant name={restaurant.name} price={restaurant.price} />
+              </div>
+            );
+        })}
     </div>
   );
 }
