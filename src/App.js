@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
+import ttnlogoresized from "./ttnlogoresized.png";
 import "./App.css";
 import Restaurant from "./Restaurant.js";
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
-import Popup from "./Popup.js";
 
 // JSON data for each restaurant
 
@@ -1094,13 +1093,12 @@ function App() {
 
   return (
     <div className="App">
-
 <div class="hamburger-menu">
     <input id="menu__toggle" type="checkbox" />
     <label class="menu__btn" for="menu__toggle">
       <span></span>
     </label>
-
+<img src={ttnlogoresized} />
     <ul class="menu__box">
       <li><a class="menu__item" href="#">Home</a></li>
       <li><a class="menu__item" href="#">Sort</a></li>
