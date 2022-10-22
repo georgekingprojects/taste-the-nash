@@ -4,7 +4,7 @@ function Restaurant(props) {
       style={{
         backgroundColor: "grey",
         width: "300px",
-        height: "300px",
+        height: "100px",
         margin: "20px",
       }}
     >
