@@ -962,11 +962,15 @@ function App() {
           return (
             <>
               <div id="boxes">
-                <input
+                {/*<input
                   type="button"
-                  value="Click to Open Popup"
+                  value={restaurant.name}
                   onClick={togglePopup}
-                />
+                />*/}
+                <div onClick={togglePopup}>
+                  <h3>{restaurant.name}</h3>
+                </div>
+
                 {isOpen && (
                   <Popup
                     content={
@@ -989,7 +993,6 @@ function App() {
                     handleClose={togglePopup}
                   />
                 )}
-                <Restaurant name={restaurant.name} price={restaurant.price} />
               </div>
             </>
           );
