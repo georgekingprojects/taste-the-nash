@@ -71,9 +71,9 @@ html {
 }
 .menu__btn {
   position: fixed;
-  top: 20px;
-  left: 10px;
-  width: 32px;
+  top: 35px;
+  left: 30px;
+  width: 45px;
   height: 26px;
   cursor: pointer;
   z-index: 18;
@@ -83,7 +83,7 @@ html {
 .menu__btn > span::after {
   display: block;
   position: absolute;
-  height: 4px;
+  height: 6px;
   background-color: #c2822f;
   transition-duration: .25s;
   width: 100%;
@@ -91,11 +91,11 @@ html {
 }
 .menu__btn > span::before {
   content: '';
-  top: -8px;
+  top: -14px;
 }
 .menu__btn > span::after {
   content: '';
-  top: 8px;
+  top: 14px;
 }
 .menu__box {
   display: block;
