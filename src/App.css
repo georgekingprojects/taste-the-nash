@@ -212,6 +212,12 @@ html {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+.imgOnBox {
+  float: left;
+  height: 3rem;
+  width: auto;
+}
+
 .restaurantTitle {
   font-size: 4rem;
   text-align: left;
