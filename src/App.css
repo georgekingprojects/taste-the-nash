@@ -182,9 +182,9 @@ html {
   height: 4rem;
   margin: 2rem;
   cursor: pointer;
-  background-color: #c094c4;
+  background-color: #caf0ff;
   border-radius: 15px;
-  border: 2px solid rgb(91, 70, 211);
+  border: 2px solid rgb(110, 156, 255);
   justify-content: space-between;
   width: 20%;
   float: left;
@@ -200,7 +200,7 @@ html {
   font-size: 4rem;
   text-align: left;
   margin-left: 4rem;
-  background-color: #d39039;
+  background-color: #fdc57b;
 }
 
 .popupButton {
