@@ -601,6 +601,7 @@ var FABLE = {
   price: "$$",
   address: "114 28th Ave N, Nashville, TN 37203",
   imgLoc: "fable.png",
+  menuUrl: "https://www.fablelounge.restaurant/menu",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -621,6 +622,7 @@ var KOISUSHI = {
   price: "$$",
   address: "2214 Elliston Pl, Nashville, TN 37203",
   imgLoc: "koisushi.png",
+  menuUrl: "https://www.talech.com/biz/619853/Koi-Sushi-Thai-East-Llc-Nashville-TN#/menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -641,6 +643,7 @@ var PAPAJOHNS = {
   price: "$",
   address: "2316 West End Ave, Nashville, TN 37203",
   imgLoc: "papajohns.png",
+  menuUrl: "https://www.papajohns.com/order/menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -661,6 +664,7 @@ var SITARINDIAN = {
   price: "$$",
   address: "116 21st Ave N, Nashville, TN 37203",
   imgLoc: "sitar.png",
+  menuUrl: "https://www.sitarindiannashville.com/menu.aspx",
   isGetApp: true,
   isDrinks: false,
   isMexican: false,
@@ -681,6 +685,7 @@ var SUNANDFORK = {
   price: "$$",
   address: "2525 West End Ave, Nashville, TN 37203",
   imgLoc: "sunandfork.png",
+  menuUrl: "https://sunandfork.com/menu/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -701,6 +706,7 @@ var WENDYS = {
   price: "$",
   address: "2603 West End Ave, Nashville, TN 37203",
   imgLoc: "wendys.png",
+  menuUrl: 'https://order.wendys.com/categories?site=menu',
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -741,6 +747,7 @@ var ELLISTONPLACESODASHOP = {
   price: "$",
   address: "2105 Elliston Pl, Nashville, TN 37203",
   imgLoc: "ellistonplace.png",
+  menuUrl: "https://www.cafecoco.com/menu-items",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -761,6 +768,7 @@ var FRUTTABOWLS = {
   price: "$$",
   address: "2424 Elliston Pl, Nashville, TN 37203",
   imgLoc: "fruttabowl.png",
+  memuUrl: "https://fruttabowls.com/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -781,6 +789,7 @@ var ILOVESUSHI = {
   price: "$$",
   address: "2300 Elliston Pl, Nashville, TN 37203",
   imgLoc: "ilovesushi.png",
+  menuUrl: "https://www.ilovesushinashville.com/menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -801,6 +810,7 @@ var JAMBA = {
   price: "$",
   address: "2314 Elliston Pl, Nashville, TN 37203",
   imgLoc: "jamba.png",
+  menuUrl: "https://www.jamba.com/menu#menu",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -1163,8 +1173,8 @@ function App() {
       <div id="things">
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=11MSZMur_QnNCaeMNLguURSVG0_dRA5E&ehbc=2E312F"
-          width="1000"
-          height="700"
+          width="1000rem"
+          height="700rem"
           href="map"
         ></iframe>
       </div>
