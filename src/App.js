@@ -1134,17 +1134,17 @@ const sortedRestaurantArrayDecresasing = [
 //options for categories
 const categoryOptions = [
   { value: "all", label: "Select All" },
-  { value: "pizza", label: "Pizza" },
-  { value: "drinks", label: "Drinks" },
-  { value: "mexican", label: "Mexican" },
-  { value: "healthy", label: "Healthy" },
-  { value: "seafood", label: "Seafood" },
   { value: "breakfast", label: "Breakfast" },
-  { value: "dessert", label: "Dessert" },
-  { value: "italian", label: "Italian" },
+  { value: "drinks", label: "Drinks" },
+  { value: "seafood", label: "Seafood" },
+  { value: "pizza", label: "Pizza" },
+  { value: "mexican", label: "Mexican" },
   { value: "american", label: "American" },
+  { value: "italian", label: "Italian" },
   { value: "asian", label: "East Asian" },
   { value: "indian", label: "Indian" },
+  { value: "dessert", label: "Dessert" },
+  { value: "healthy", label: "Healthy" },
   { value: "get", label: "Available on GET App" },
 ];
 
@@ -1163,6 +1163,7 @@ function App() {
   const [userLat, setUserLat] = useState(null);
   const [userLong, setUserLong] = useState(null);
 
+  // Retriving the user's current latitude and longitude
   useEffect(() => {
     if ("geolocation" in navigator) {
       console.log("Available");
@@ -1247,17 +1248,17 @@ function App() {
         sortedRestaurantArray.map((restaurant) => {
           if (
             selectedCategory == "all" ||
-            (restaurant.isPizza && selectedCategory == "pizza") ||
-            (restaurant.isDrinks && selectedCategory == "drinks") ||
-            (restaurant.isMexican && selectedCategory == "mexican") ||
-            (restaurant.isHealthy && selectedCategory == "healthy") ||
-            (restaurant.isSeafood && selectedCategory == "seafood") ||
             (restaurant.isBreakfast && selectedCategory == "breakfast") ||
-            (restaurant.isDessert && selectedCategory == "dessert") ||
+            (restaurant.isDrinks && selectedCategory == "drinks") ||
+            (restaurant.isSeafood && selectedCategory == "seafood") ||
+            (restaurant.isPizza && selectedCategory == "pizza") ||
+            (restaurant.isMexican && selectedCategory == "mexican") ||
             (restaurant.isItalian && selectedCategory == "italian") ||
             (restaurant.isAmerican && selectedCategory == "american") ||
             (restaurant.isAsian && selectedCategory == "asian") ||
             (restaurant.isIndian && selectedCategory == "indian") ||
+            (restaurant.isHealthy && selectedCategory == "healthy") ||
+            (restaurant.isDessert && selectedCategory == "dessert") ||
             (restaurant.isGetApp && selectedCategory == "get")
           )
             return (
@@ -1279,17 +1280,17 @@ function App() {
         sortedRestaurantArrayDecresasing.map((restaurant) => {
           if (
             selectedCategory == "all" ||
-            (restaurant.isPizza && selectedCategory == "pizza") ||
-            (restaurant.isDrinks && selectedCategory == "drinks") ||
-            (restaurant.isMexican && selectedCategory == "mexican") ||
-            (restaurant.isHealthy && selectedCategory == "healthy") ||
-            (restaurant.isSeafood && selectedCategory == "seafood") ||
             (restaurant.isBreakfast && selectedCategory == "breakfast") ||
-            (restaurant.isDessert && selectedCategory == "dessert") ||
+            (restaurant.isDrinks && selectedCategory == "drinks") ||
+            (restaurant.isSeafood && selectedCategory == "seafood") ||
+            (restaurant.isPizza && selectedCategory == "pizza") ||
+            (restaurant.isMexican && selectedCategory == "mexican") ||
             (restaurant.isItalian && selectedCategory == "italian") ||
             (restaurant.isAmerican && selectedCategory == "american") ||
             (restaurant.isAsian && selectedCategory == "asian") ||
             (restaurant.isIndian && selectedCategory == "indian") ||
+            (restaurant.isHealthy && selectedCategory == "healthy") ||
+            (restaurant.isDessert && selectedCategory == "dessert") ||
             (restaurant.isGetApp && selectedCategory == "get")
           )
             return (
