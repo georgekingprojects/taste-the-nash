@@ -1179,6 +1179,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* Top-left hamburger menu side bar */}
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
@@ -1204,6 +1205,7 @@ function App() {
           </li>
         </ul>
       </div>
+      {/* Main Google map with restaurant markers */}
       <div id="things">
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=11MSZMur_QnNCaeMNLguURSVG0_dRA5E&ehbc=2E312F"
@@ -1304,6 +1306,7 @@ function App() {
             );
         })}
 
+      {/* "About Us" section at the bottom of the page */}
       <div className="breakFoot"></div>
       <div className="aboutUs">
         <p className="fillerText">About Us</p>
