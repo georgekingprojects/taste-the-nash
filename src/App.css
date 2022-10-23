@@ -1,6 +1,7 @@
 /* whole app */
 .App {
   margin-top: -4rem;
+  font-family: Lucida Sans;
 }
 
 html {
@@ -379,10 +380,17 @@ iframe {
 .linkedin {
   width: 5rem;
   height: auto;
+  padding: 2rem;
+  margin-right: 1rem;
 }
 
 /* The initialis for the LinkedIn icons */
 .initials {
   color: rgb(109, 112, 109);
   font-size: 3rem;
+  margin-left: 2rem;
+  border: 3px solid rgb(109, 112, 109);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
 }

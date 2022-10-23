@@ -1285,18 +1285,18 @@ function App() {
         sortedRestaurantArray.map((restaurant) => {
           if (
             selectedCategory == "all" ||
-            (restaurant.isBreakfast && selectedCategory == "breakfast") ||
-            (restaurant.isDrinks && selectedCategory == "drinks") ||
-            (restaurant.isSeafood && selectedCategory == "seafood") ||
-            (restaurant.isPizza && selectedCategory == "pizza") ||
-            (restaurant.isMexican && selectedCategory == "mexican") ||
-            (restaurant.isItalian && selectedCategory == "italian") ||
-            (restaurant.isAmerican && selectedCategory == "american") ||
-            (restaurant.isAsian && selectedCategory == "asian") ||
-            (restaurant.isIndian && selectedCategory == "indian") ||
-            (restaurant.isHealthy && selectedCategory == "healthy") ||
-            (restaurant.isDessert && selectedCategory == "dessert") ||
-            (restaurant.isGetApp && selectedCategory == "get")
+            (restaurant.isBreakfast && selectedCategory === "breakfast") ||
+            (restaurant.isDrinks && selectedCategory === "drinks") ||
+            (restaurant.isSeafood && selectedCategory === "seafood") ||
+            (restaurant.isPizza && selectedCategory === "pizza") ||
+            (restaurant.isMexican && selectedCategory === "mexican") ||
+            (restaurant.isItalian && selectedCategory === "italian") ||
+            (restaurant.isAmerican && selectedCategory === "american") ||
+            (restaurant.isAsian && selectedCategory === "asian") ||
+            (restaurant.isIndian && selectedCategory === "indian") ||
+            (restaurant.isHealthy && selectedCategory === "healthy") ||
+            (restaurant.isDessert && selectedCategory === "dessert") ||
+            (restaurant.isGetApp && selectedCategory === "get")
           )
             return (
               <div className="bottomBoxes">
@@ -1317,18 +1317,18 @@ function App() {
         sortedRestaurantArrayDecresasing.map((restaurant) => {
           if (
             selectedCategory == "all" ||
-            (restaurant.isBreakfast && selectedCategory == "breakfast") ||
-            (restaurant.isDrinks && selectedCategory == "drinks") ||
-            (restaurant.isSeafood && selectedCategory == "seafood") ||
-            (restaurant.isPizza && selectedCategory == "pizza") ||
-            (restaurant.isMexican && selectedCategory == "mexican") ||
-            (restaurant.isItalian && selectedCategory == "italian") ||
-            (restaurant.isAmerican && selectedCategory == "american") ||
-            (restaurant.isAsian && selectedCategory == "asian") ||
-            (restaurant.isIndian && selectedCategory == "indian") ||
-            (restaurant.isHealthy && selectedCategory == "healthy") ||
-            (restaurant.isDessert && selectedCategory == "dessert") ||
-            (restaurant.isGetApp && selectedCategory == "get")
+            (restaurant.isBreakfast && selectedCategory === "breakfast") ||
+            (restaurant.isDrinks && selectedCategory === "drinks") ||
+            (restaurant.isSeafood && selectedCategory === "seafood") ||
+            (restaurant.isPizza && selectedCategory === "pizza") ||
+            (restaurant.isMexican && selectedCategory === "mexican") ||
+            (restaurant.isItalian && selectedCategory === "italian") ||
+            (restaurant.isAmerican && selectedCategory === "american") ||
+            (restaurant.isAsian && selectedCategory === "asian") ||
+            (restaurant.isIndian && selectedCategory === "indian") ||
+            (restaurant.isHealthy && selectedCategory === "healthy") ||
+            (restaurant.isDessert && selectedCategory === "dessert") ||
+            (restaurant.isGetApp && selectedCategory === "get")
           )
             return (
               <div className="bottomBoxes">
@@ -1353,19 +1353,27 @@ function App() {
       about us 
       </div>
       <div className="aboutUsBody">
-      <div className="initials">KT:</div>
-        <img className="linkedin" src={linkedinicon} />
-        <div className="initials">GW:</div>
+      <div className="initials">KT: </div>
+      <a href="https://www.linkedin.com/in/kierathomas6/" target="_blank" rel="noreferrer" alt="Kiera Thomas">
         <img className="linkedin" src={linkedinicon}/>
+        </a>
+        <div className="initials">GW: </div>
+        <a href="https://www.linkedin.com/in/george-wang-dev/" target="_blank" rel="noreferrer" alt="George Wang">
+        <img className="linkedin" src={linkedinicon}/>
+        </a>
         <p className="aboutUsText">
           This project was envisioned and built by <br></br>
-          Kiera Thomas, George Wang, Sarah Besser, and Justin Munoz <br></br>
+          Kiera Thomas, George Wang, Sarah Besser, and Justin Munoz 
           during VandyHacks IX. Connect with us on LinkedIn!
         </p>
         <div className="initials">SB:</div>
+        <a href="https://www.linkedin.com/in/sarah-besser-5bb803253/" target="_blank" rel="noreferrer" alt="Sarah Besser">
         <img className="linkedin" src={linkedinicon}/>
+        </a>
         <div className="initials">JM:</div>
+        <a href="https://www.linkedin.com/in/justin-munoz-116645205/" target="_blank" rel="noreferrer" alt="Justin Munoz">
         <img className="linkedin" src={linkedinicon}/>
+        </a>
       </div>
     </div>
   );
