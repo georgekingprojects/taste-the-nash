@@ -45,11 +45,10 @@ html {
   font-size: 4rem;
   letter-spacing: 2rem;
   width: 100rem;
-  z-index: 100;
+  z-index: 5;
 }
 
 /* area with top graphic anxd title */
-/* linear-gradient(to bottom, rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.75)) */
 #taste {
   text-align: center;
   color: black;
@@ -327,9 +326,25 @@ iframe {
 /* The visible "About Us" title */
 .aboutUsTitle {
   text-align: center;
-  background-color: rgb(16, 17, 16);
   color: rgb(109, 112, 109);
   font-size: 6rem;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+.aboutUsTitle::after {
+  content: "";
+  margin-left: 1rem;
+  margin-bottom: -3px;
+  width: 0.8rem;
+  height: 4.7rem;
+  background: #0d0d0e;
+  display: inline-block;
+  animation: cursor-blink 1.5s steps(2) infinite;
 }
 
 /* The invisible text that creates space after the blue boxes */
@@ -341,13 +356,31 @@ iframe {
 
 /* The body of the About Us section */
 .aboutUsBody {
-  background-color:rgb(0, 0, 0);
   margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* The text description for the About Us section */
 .aboutUsText {
-  background-color:rgb(0, 0, 0);
+  width: 40rem;
+  height: 8rem;
+  padding: 3rem;
+  border: 1px solid rgb(109, 112, 109);
   color: rgb(109, 112, 109);
   font-size: 1.5rem;
   text-align: center;
+}
+
+/* The LinkedIn icons */
+.linkedin {
+  width: 5rem;
+  height: auto;
+}
+
+/* The initialis for the LinkedIn icons */
+.initials {
+  color: rgb(109, 112, 109);
+  font-size: 3rem;
 }

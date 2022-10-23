@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import { db } from "./firebase";
 import "@fontsource/niconne";
+import linkedinicon from "./linkedinicon.png";
 
 // JSON data for each restaurant
 
@@ -1349,14 +1350,22 @@ function App() {
         <p className="fillerText">About Us</p>
       </div>
       <div className="aboutUsTitle" id="aboutUsSection">
-      about us
+      about us 
       </div>
       <div className="aboutUsBody">
+      <div className="initials">KT:</div>
+        <img className="linkedin" src={linkedinicon} />
+        <div className="initials">GW:</div>
+        <img className="linkedin" src={linkedinicon}/>
         <p className="aboutUsText">
           This project was envisioned and built by <br></br>
           Kiera Thomas, George Wang, Sarah Besser, and Justin Munoz <br></br>
           during VandyHacks IX. Connect with us on LinkedIn!
         </p>
+        <div className="initials">SB:</div>
+        <img className="linkedin" src={linkedinicon}/>
+        <div className="initials">JM:</div>
+        <img className="linkedin" src={linkedinicon}/>
       </div>
     </div>
   );
