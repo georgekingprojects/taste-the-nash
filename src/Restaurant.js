@@ -337,10 +337,11 @@ function Restaurant(props) {
               </div>
               <p>Address: {props.restaurant.address}</p>
               <p>Price Rating: {props.restaurant.price}</p>
-              <a href={props.menu}>MENU</a>
-              <button className="buttonMenu">
-                <span>See Menu</span>
-              </button>
+              <a href={props.menu} target="_blank">
+                <button className="buttonMenu">
+                  <span>See Menu</span>
+                </button>
+              </a>
               <form onSubmit={handleSubmit}>
                 <div
                   style={{
