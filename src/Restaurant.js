@@ -113,8 +113,7 @@ function Restaurant(props) {
           }}
         >
           <img
-            width={50}
-            height={50}
+          class="imgOnBox"
             src={
               props.name == "The Ainsworth"
                 ? require("./imgfiles/ainsworth.png")
@@ -338,6 +337,7 @@ function Restaurant(props) {
               </div>
               <p>Address: {props.restaurant.address}</p>
               <p>Price Rating: {props.restaurant.price}</p>
+              <a href={props.menu}>MENU</a>
 
               <form onSubmit={handleSubmit}>
                 <label>Leave a Recommendation!</label>

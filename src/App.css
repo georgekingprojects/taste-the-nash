@@ -101,7 +101,7 @@ html {
   display: block;
   position: absolute;
   height: 6px;
-  background-color: #c2822f;
+  background-color: #d1650c;
   transition-duration: .25s;
   width: 100%;
   z-index: 17;
@@ -210,6 +210,12 @@ html {
   margin-right: 2rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.imgOnBox {
+  float: left;
+  height: 3rem;
+  width: auto;
 }
 
 .restaurantTitle {
