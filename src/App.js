@@ -13,6 +13,7 @@ var ANZIEBLUE = {
   price: "$$",
   address: "2111 Belcourt Ave, Nashville, TN 37212",
   imgLoc: "anzieblue.png",
+  menuUrl: "https://wickedtasty.menu/anzie-blue",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -33,6 +34,7 @@ var BANHMIANDROLL = {
   price: "$",
   address: "1808 20th Ave S Ste 101, Nashville, TN 37212",
   imgLoc: "banhmiroll.png",
+  menuUrl: "https://banhmiandrollplus.com/our-menu/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -53,6 +55,7 @@ var BARISTAPARLOR = {
   price: "$",
   address: "1817 21st Ave S, Nashville, TN 37212",
   imgLoc: "baristaparlor.png",
+  menuUrl: "https://baristaparlor.com/menu/",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -73,6 +76,7 @@ var BISCUITLOVE = {
   price: "$$",
   address: "2001 Belcourt Ave Nashville, TN 37212",
   imgLoc: "biscuitlove.png",
+  menuUrl: "https://www.biscuitlove.com/menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -93,6 +97,7 @@ var CABANATAPS = {
   price: "$$",
   address: "1910 Belcourt Ave, Nashville, TN 37212",
   imgLoc: "cabanataps.png",
+  menuUrl: "https://cabananashville.com/nashville-cabana-taps-food-menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -113,6 +118,7 @@ var CENTRALBBQ = {
   price: "$$",
   address: "1601 21st Ave S, Nashville, TN 37212",
   imgLoc: "centralbbq.png",
+  menuUrl: "https://eatcbq.com/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -133,6 +139,7 @@ var GRAINBERRY = {
   price: "$$",
   address: "1806 20th Ave S, Nashville, TN 37212",
   imgLoc: "grainandberry.png",
+  menuUrl: "https://grainandberry.com/menu-2/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -153,6 +160,7 @@ var THEGRILLEDCHEESERIE = {
   price: "$",
   address: "2003 Belcourt Ave, Nashville, TN 37212",
   imgLoc: "grilledcheeserie.png",
+  menuUrl: "https://grilledcheeserie.com/view-menu-limited",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -173,6 +181,7 @@ var HOPDODDY = {
   price: "$$",
   address: "1805 21st Ave S, Nashville, TN 37212",
   imgLoc: "hopdoddy.png",
+  menuUrl: "https://www.hopdoddy.com/menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -193,6 +202,7 @@ var JENIS = {
   price: "$$",
   address: "1819 21st Ave S, Nashville, TN 37212",
   imgLoc: "jenis.png",
+  menuUrl: "https://jenis.com/collections/all-flavors",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -213,6 +223,7 @@ var MEETNOODLES = {
   price: "$$",
   address: "2121 Belcourt Ave, Nashville, TN 37212",
   imgLoc: "meetnoodles.png",
+  menuUrl: "https://www.meetnoodlestn.com/menu.aspx",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -233,6 +244,7 @@ var NICOLETTOS = {
   price: "$$",
   address: "2123 Belcourt Ave, Nashville, TN 37212",
   imgLoc: "nicolettos.png",
+  menuUrl: "https://www.nicolettos.com/pages/italian-kitchen",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -253,6 +265,7 @@ var SHOKKURAMEN = {
   price: "$$",
   address: "2127 Belcourt Ave, Nashville, TN 37212",
   imgLoc: "shokkuramen.png",
+  menuUrl: "https://shokkuramen.com/menu-nashville/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -273,6 +286,7 @@ var TACOMAMA = {
   price: "$$",
   address: "1612 21st Ave S, Nashville, TN 37212",
   imgLoc: "tacomama.png",
+  menuUrl: "https://tacomamaonline.com/hillsborovillage/",
   isGetApp: false,
   isDrinks: false,
   isMexican: true,
@@ -293,6 +307,7 @@ var URBANJUICER = {
   price: "$$",
   address: "1622 21st Ave S, Nashville, TN 37212",
   imgLoc: "urbanjuicer.png",
+  menuUrl: "https://theurbanjuicer.com/our-menu/",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -313,6 +328,7 @@ var CHUYS = {
   price: "$$",
   address: "1901 Broadway, Nashville, TN 37203",
   imgLoc: "chuys.png",
+  menuUrl: "https://www.chuys.com/menu/food",
   isGetApp: false,
   isDrinks: false,
   isMexican: true,
@@ -333,6 +349,7 @@ var DONATOSPIZZA = {
   price: "$$",
   address: "1915 Broadway, Nashville, TN 37203",
   imgLoc: "donatos.png",
+  menuUrl: "https://www.donatos.com/location?redirect=/menu/pizza",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -353,6 +370,7 @@ var HELENSHOTCHICKEN = {
   price: "$",
   address: "2010 Scarritt Pl, Nashville, TN 37203",
   imgLoc: "helenshotchicken.png",
+  menuUrl: "https://www.helenshotchicken.com/menus/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -373,6 +391,7 @@ var MELLOWMUSHROOM = {
   price: "$$",
   address: "212 21st Ave S, Nashville, TN 37203",
   imgLoc: "mellowmushroom.png",
+  menuUrl: "https://mellowmushroom.com/menu/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -393,6 +412,7 @@ var NADA = {
   price: "$$",
   address: "202 21st Ave S Nashville, TN 37203",
   imgLoc: "nada.png",
+  menuUrl: "https://www.eatdrinknada.com/location/nashville/",
   isGetApp: false,
   isDrinks: true,
   isMexican: true,
@@ -413,6 +433,7 @@ var THEAINSWORTH = {
   price: "$$",
   address: "206 21st Ave S, Nashville, TN 37203",
   imgLoc: "ainsworth.png",
+  menuUrl: "https://www.the-ainsworth.com/nashville-menu/",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -433,6 +454,7 @@ var SARABHASCREAMERY = {
   price: "$$",
   address: "400 21st Ave S suite 201, Nashville, TN 37203",
   imgLoc: "sarabhas.png",
+  menuUrl: "https://sarabhascreamery.com/typography/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -453,6 +475,7 @@ var THESLIDERHOUSE = {
   price: "$$",
   address: "1907 Division St, Nashville, TN 37203",
   imgLoc: "sliderhouse.png",
+  menuurl: "https://sliderhousensh.com/#menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -473,7 +496,8 @@ var URBANCOOKHOUSE = {
   price: "$$",
   address: "1907 Broadway, Nashville, TN 37203",
   imgLoc: "urbancookhouse.png",
-  isGetApp: false,
+  menuUrl: "https://www.urbancookhouse.com/category/full-menu/?post_type=menu",
+  isGetApp: true,
   isDrinks: false,
   isMexican: false,
   isIndian: false,
@@ -493,6 +517,7 @@ var BOMBAYPALACE = {
   price: "$$",
   address: "2912 West End Ave, Nashville, TN 37203",
   imgLoc: "bombaypalace.png",
+  menuUrl: "https://bobmaypalacenashville.com/menu/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -513,6 +538,7 @@ var CHILIS = {
   price: "$$",
   address: "2322 West End Ave, Nashville, TN 37203",
   imgLoc: "chilis.png",
+  menuUrl: "https://www.chilis.com/menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -533,6 +559,7 @@ var INCHINSBAMBOOGARDEN = {
   price: "$$",
   address: "1800 West End Ave, Nashville, TN 37203",
   imgLoc: "inchins.png",
+  menuUrl: "https://bamboo-gardens.com/menu/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -553,6 +580,7 @@ var CRABFEVER = {
   price: "$$",
   address: "1907 West End Ave, Nashville, TN 37203",
   imgLoc: "crabfever.png",
+  menuUrl: "https://www.crabfever.com/#menu-section",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -589,7 +617,7 @@ var FABLE = {
   long: -86.81273230847562,
 };
 var KOISUSHI = {
-  name: "Koi Sushi & Tai",
+  name: "Koi Sushi & Thai",
   price: "$$",
   address: "2214 Elliston Pl, Nashville, TN 37203",
   imgLoc: "koisushi.png",
@@ -1129,14 +1157,14 @@ function App() {
       <ul class="menu__box">
         <li><a class="menu__item" href="#top">Home</a></li>
         <li><a class="menu__item" href="#sortSection">Sort</a></li>
-        <li><a class="menu__item" href="#bottom">About</a></li>
+        <li><a class="menu__item" href="#aboutUsSection">About</a></li>
       </ul>
       </div>
       <div id="things">
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=11MSZMur_QnNCaeMNLguURSVG0_dRA5E&ehbc=2E312F"
-          width="640"
-          height="480"
+          width="1000"
+          height="700"
           href="map"
         ></iframe>
       </div>
@@ -1236,7 +1264,7 @@ function App() {
             About Us
             </p>
           </div>
-          <div className="aboutUsTitle">
+          <div className="aboutUsTitle" id="aboutUsSection">
               about us
           </div>
           <div className="aboutUsBody">
