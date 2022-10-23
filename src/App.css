@@ -1,5 +1,6 @@
 .App {
   margin: 0;
+  font-family: 'Lucida Console';
 }
 
 #dropdowns {
@@ -100,7 +101,7 @@
   display: block;
   padding: 12px 24px;
   color: #c2822f;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lucida Console';
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
