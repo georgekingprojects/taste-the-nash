@@ -1,5 +1,6 @@
 .App {
-  margin: 0;
+  position: relative;
+  margin: -5em;
 }
 
 #dropdowns {
@@ -20,13 +21,19 @@
   padding-left: 2.5rem;
 }
 
+/* linear-gradient(to bottom, rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.75)) */
 #taste {
   text-align: center;
-  background-image: linear-gradient(to bottom, rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.75)), url("campusbackground.png");
-  color: white;
+  color: black;
+  vertical-align: text-top;
+  background-image: url("nashvilleskyline.png");
+  background-size: 17rem;
+  background-repeat: repeat-x;
   padding: 2rem;
   margin: 0;
-  width: auto;
+  position: relative;
+  top: 1em;
+  height: 6.4rem;
 }
 
 #things {
