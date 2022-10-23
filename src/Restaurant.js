@@ -335,6 +335,13 @@ function Restaurant(props) {
                     : "None"
                 }
               />
+                            {/* Adding maps to the popup boxes*/}
+                            <iframe id="popupmap"
+                src={props.mapUrl}
+                width="200rem"
+                height="140rem"
+                href="map"
+              ></iframe>
               <div className="restaurantTitle">
                 <b> {props.name} </b>
               </div>
@@ -346,14 +353,6 @@ function Restaurant(props) {
                 </button>
               </a>
 
-              {/* Adding maps to the popup boxes*/}
-              <iframe
-                src={props.mapUrl}
-                width="200rem"
-                height="140rem"
-                href="map"
-              ></iframe>
-
               {/* Recommendation input boxes and buttons*/}
               <form onSubmit={handleSubmit}>
                 <div
@@ -364,6 +363,7 @@ function Restaurant(props) {
                     float: "right",
                   }}
                 >
+
                   <label>
                     <h3>Leave a Recommendation!</h3>
                   </label>

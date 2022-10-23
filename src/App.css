@@ -244,6 +244,7 @@ iframe {
   height: 100vh;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 
 /* The icon that appears on each blue box */
@@ -271,6 +272,11 @@ iframe {
   width: 15rem;
   height: 15rem;
   float: left;
+}
+
+#popupmap {
+  float: left;
+  vertical-align:bottom;
 }
 
 /* The "See Menu" button that appears on the pop-up box */
