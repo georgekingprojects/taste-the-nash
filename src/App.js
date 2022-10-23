@@ -1135,6 +1135,7 @@ const sortedRestaurantArrayDecresasing = [
 const categoryOptions = [
   { value: "all", label: "Select All" },
   { value: "breakfast", label: "Breakfast" },
+  { value: "dessert", label: "Dessert" },
   { value: "drinks", label: "Drinks" },
   { value: "seafood", label: "Seafood" },
   { value: "pizza", label: "Pizza" },
@@ -1143,7 +1144,6 @@ const categoryOptions = [
   { value: "italian", label: "Italian" },
   { value: "asian", label: "East Asian" },
   { value: "indian", label: "Indian" },
-  { value: "dessert", label: "Dessert" },
   { value: "healthy", label: "Healthy" },
   { value: "get", label: "Available on GET App" },
 ];
