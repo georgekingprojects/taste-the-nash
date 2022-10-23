@@ -335,16 +335,11 @@ function Restaurant(props) {
                     : "None"
                 }
               />
-                            {/* Adding maps to the popup boxes*/}
-                            <iframe id="popupmap"
-                src={props.mapUrl}
-                width="200rem"
-                height="140rem"
-                href="map"
-              ></iframe>
+
               <div className="restaurantTitle">
                 <b> {props.name} </b>
               </div>
+              <div>
               <p>Address: {props.restaurant.address}</p>
               <p>Price Rating: {props.restaurant.price}</p>
               <a href={props.menu} target="_blank">
@@ -352,6 +347,8 @@ function Restaurant(props) {
                   <span>See Menu</span>
                 </button>
               </a>
+              </div>
+              
 
               {/* Recommendation input boxes and buttons*/}
               <form onSubmit={handleSubmit}>
@@ -361,35 +358,33 @@ function Restaurant(props) {
                     flexDirection: "column",
                     width: "35%",
                     float: "right",
+                    paddingRight: "7rem",
                   }}
                 >
+                    <label>
+                      <h3>Leave a Recommendation!</h3>
+                    </label>
+                    <input style = {{margin: "0.3rem", width: "90%"}}
+                      type="text"
+                      placeholder="Name..."
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                    />
+                    <textarea
+                      style={{
+                        width: "90%",
+                        margin: "0.5rem",
+                      }}
+                      placeholder="Recommendation e.g. Beef Taco, etc..."
+                      cols="40"
+                      rows="5"
+                      type="text"
+                      value={review}
+                      onChange={(e) => setReview(e.target.value)}
+                    >
 
-                  <label>
-                    <h3>Leave a Recommendation!</h3>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Name..."
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                  />
-                  <textarea
-                    style={{
-                      marginTop: ".2em",
-                      width: "90%",
-                      margin: ".2em auto",
-                    }}
-                    placeholder="Recommendation e.g. Beef Taco, etc..."
-                    cols="40"
-                    rows="5"
-                    type="text"
-                    value={review}
-                    onChange={(e) => setReview(e.target.value)}
-                  >
-
-                  </textarea>
-
-                  <button type="submit">Submit</button>
+                    </textarea>
+                  <button type="submit" style = {{width: "90%", position: "relative", left: "2%"}}>Submit</button>
                 </div>
               </form>
               <div
@@ -434,6 +429,13 @@ function Restaurant(props) {
                     );
                   })}
                 {!reviews[0] && seeReviews && <p>No recommendations yet.</p>}
+                {/* Adding maps to the popup boxes*/}
+                <iframe id="popupmap"
+                      src={props.mapUrl}
+                      width="200rem"
+                      height="140rem"
+                      href="map"
+                    ></iframe>
               </div>
 
             </>

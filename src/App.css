@@ -19,7 +19,7 @@ html {
 #category {
   display: table-cell;
   width: 20rem;
-  padding-left: 1.5rem;
+  padding-left: 4.5rem;
   z-index: 11;
 }
 
@@ -263,8 +263,11 @@ iframe {
   margin-left: 20rem;
   background-image: linear-gradient(to right, #f7982d, #f1cda3);
   border-radius: 1rem;
+  padding-top: 0.1rem;
   padding-left: 1.5rem;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0rem;
+  font-family: Garamond;
+  color: white;
 }
 
 /* The icon that appears on the pop-up box */
@@ -275,8 +278,7 @@ iframe {
 }
 
 #popupmap {
-  float: left;
-  vertical-align:bottom;
+  padding: 1rem;
 }
 
 /* The "See Menu" button that appears on the pop-up box */
