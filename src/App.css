@@ -71,8 +71,8 @@ html {
 }
 .menu__btn {
   position: fixed;
-  top: 35px;
-  left: 30px;
+  top: 20px;
+  left: 5px;
   width: 45px;
   height: 26px;
   cursor: pointer;
@@ -102,7 +102,7 @@ html {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 10rem;
+  width: 11rem;
   height: 14.5%;
   margin: 0;
   list-style: none;
@@ -116,7 +116,7 @@ html {
 }
 .menu__item {
   display: block;
-  padding: 12px 3rem;
+  padding: 12px 4rem;
   color: #c2822f;
   font-family: 'Lucida Console';
   font-size: 20px;
