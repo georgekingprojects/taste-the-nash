@@ -342,6 +342,13 @@ function Restaurant(props) {
                   <span>See Menu</span>
                 </button>
               </a>
+
+              <iframe
+                src={props.mapUrl}
+                width="200rem"
+                height="140rem"
+                href="map"
+              ></iframe>
               <form onSubmit={handleSubmit}>
                 <div
                   style={{

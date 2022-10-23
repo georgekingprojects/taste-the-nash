@@ -1291,6 +1291,7 @@ function App() {
                   userLat={userLat}
                   userLong={userLong}
                   menu={restaurant.menuUrl}
+                  mapUrl={restaurant.mapUrl}
                 />
               </div>
             );
@@ -1322,6 +1323,7 @@ function App() {
                   userLat={userLat}
                   userLong={userLong}
                   menu={restaurant.menuUrl}
+                  mapUrl={restaurant.mapUrl}
                 />
               </div>
             );
