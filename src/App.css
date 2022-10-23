@@ -7,18 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-button {
-  padding: 0.8em;
-  font-size: 0.8em;
-  font-family: "Lucida Console";
-  border-radius: 0.3em;
-  background-color: rgba(255, 153, 0, 0.75);
-}
-
-button:hover {
-  cursor: pointer;
-}
-
 /* category and select drop down */
 #dropdowns {
   display: table-row;
