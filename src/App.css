@@ -315,6 +315,7 @@ html {
 .fillerText {
   font-size: 5rem;
   color: white;
+  z-index: 0;
 }
 
 /* The body of the About Us section */
