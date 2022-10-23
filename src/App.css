@@ -45,6 +45,7 @@ html {
 /* Styling for the hamburger and side bar */
 #menu__toggle {
   opacity: 0;
+  z-index: 18;
 }
 #menu__toggle:checked + .menu__btn > span {
   transform: rotate(45deg);
@@ -67,7 +68,7 @@ html {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 17;
+  z-index: 18;
 }
 .menu__btn > span,
 .menu__btn > span::before,
