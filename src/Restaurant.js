@@ -109,7 +109,7 @@ function Restaurant(props) {
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "space-evenly",
-            marginTop: "-15px",
+            marginTop: "-10px",
           }}
         >
           <img

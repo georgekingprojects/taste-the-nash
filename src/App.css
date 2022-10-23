@@ -216,6 +216,7 @@ html {
   float: left;
   height: 3rem;
   width: auto;
+  margin-top: -10px;
 }
 
 .restaurantTitle {
