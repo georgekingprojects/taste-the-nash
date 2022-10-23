@@ -90,7 +90,7 @@ var CABANATAPS = {
   name: "Cabana Taps",
   price: "$$",
   address: "1910 Belcourt Ave, Nashville, TN 37212",
-  imgLoc: "bombaypalace.png",
+  imgLoc: "cabanataps.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
