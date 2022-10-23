@@ -1,6 +1,5 @@
 .App {
   margin-top: -4rem;
-  font-family: "Lucida Console";
 }
 
 html {
@@ -47,7 +46,7 @@ button:hover {
   place-self: center;
   top: 5em;
   position: absolute;
-  top: 4%;
+  top: 1%;
   left: 50%;
   transform: translate(-50%, 0%);
   font-size: 4rem;
