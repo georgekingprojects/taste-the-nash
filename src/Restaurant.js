@@ -338,7 +338,9 @@ function Restaurant(props) {
               <p>Address: {props.restaurant.address}</p>
               <p>Price Rating: {props.restaurant.price}</p>
               <a href={props.menu}>MENU</a>
-
+              <button className="buttonMenu">
+                <span>See Menu</span>
+              </button>
               <form onSubmit={handleSubmit}>
                 <label>Leave a Recommendation!</label>
                 <input
