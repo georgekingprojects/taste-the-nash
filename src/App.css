@@ -78,6 +78,8 @@ html {
   opacity: 0;
   z-index: 18;
 }
+
+/* Styling for the hamburger -> "X" transition */
 #menu__toggle:checked + .menu__btn > span {
   transform: rotate(45deg);
 }
@@ -92,6 +94,8 @@ html {
 #menu__toggle:checked ~ .menu__box {
   left: 0 !important;
 }
+
+/* The hamburger icon */
 .menu__btn {
   position: fixed;
   top: 20px;
@@ -101,6 +105,8 @@ html {
   cursor: pointer;
   z-index: 18;
 }
+
+/* The 3 parts of the hamburger icon */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -155,6 +161,7 @@ html {
   background-color: #ddad86;
 }
 
+/* The box that "pops up" after clicking on a restaurant's blue box */
 .popup-box {
   text-align: center;
   position: fixed;
