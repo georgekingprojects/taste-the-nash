@@ -632,7 +632,7 @@ var SITARINDIAN = {
   price: "$$",
   address: "116 21st Ave N, Nashville, TN 37203",
   imgLoc: "sitar.png",
-  isGetApp: false,
+  isGetApp: true,
   isDrinks: false,
   isMexican: false,
   isIndian: true,
@@ -792,7 +792,7 @@ var JETSPIZZA = {
   price: "$",
   address: "214 25th Ave N, Nashville, TN 37203",
   imgLoc: "jetspizza.png",
-  isGetApp: false,
+  isGetApp: true,
   isDrinks: false,
   isMexican: false,
   isIndian: false,
@@ -812,7 +812,7 @@ var MICHAELANGELOSPIZZA = {
   price: "$",
   address: "205 22nd Ave N, Nashville, TN 37203",
   imgLoc: "michaelangelo.png",
-  isGetApp: false,
+  isGetApp: true,
   isDrinks: false,
   isMexican: false,
   isIndian: false,
@@ -1123,24 +1123,12 @@ function App() {
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
-        <h1 id="taste">Tast the Nash</h1>
-        <ul class="menu__box">
-          <li>
-            <a class="menu__item" href="#top">
-              Home
-            </a>
-          </li>
-          <li>
-            <a class="menu__item" href="#sortSection">
-              Sort
-            </a>
-          </li>
-          <li>
-            <a class="menu__item" href="#bottom">
-              About
-            </a>
-          </li>
-        </ul>
+      <h1 id="taste">Taste the Nash</h1>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#top">Home</a></li>
+        <li><a class="menu__item" href="#sortSection">Sort</a></li>
+        <li><a class="menu__item" href="#bottom">About</a></li>
+      </ul>
       </div>
       <div id="things">
         <iframe
