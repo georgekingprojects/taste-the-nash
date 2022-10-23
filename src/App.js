@@ -1304,7 +1304,7 @@ function App() {
 
       <div className="breakFoot"></div>
       <div className="aboutUs">
-        <p className="fillerText"><marquee behavior="scroll" direction="right" scrollamount = "50">About Us</marquee></p>
+        About Us
       </div>
       <div className="aboutUsTitle" id="aboutUsSection">
       <marquee behavior="scroll" direction="right" scrollamount = "50">about us</marquee>
