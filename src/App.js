@@ -780,7 +780,7 @@ var FRUTTABOWLS = {
   price: "$$",
   address: "2424 Elliston Pl, Nashville, TN 37203",
   imgLoc: "fruttabowl.png",
-  memuUrl: "https://fruttabowls.com/",
+  menuUrl: "https://fruttabowls.com/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -885,8 +885,8 @@ var OSCARSTACOSHOP = {
   price: "$",
   address: "2323 Elliston Pl, Nashville, TN 37203",
   imgLoc: "oscarstacoshop.png",
-  menuUrl:
-    "https://www.toasttab.com/oscars-taco-shop-vandy-2323-elliston-place/v3/",
+  menuUrl: "https://www.toasttab.com/oscars-taco-shop-vandy-2323-elliston-place/v3/",
+  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51550.27547162454!2d-86.83544152680653!3d36.1448375339957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88646740c3800c29%3A0x3daf1389b6c0a667!2sOscar&#39;s%20Taco%20Shop%20at%20Vandy!5e0!3m2!1sen!2sus!4v1666511204988!5m2!1sen!2sus",
   isGetApp: false,
   isDrinks: false,
   isMexican: true,
@@ -1134,17 +1134,17 @@ const sortedRestaurantArrayDecresasing = [
 //options for categories
 const categoryOptions = [
   { value: "all", label: "Select All" },
-  { value: "pizza", label: "Pizza" },
-  { value: "drinks", label: "Drinks" },
-  { value: "mexican", label: "Mexican" },
-  { value: "healthy", label: "Healthy" },
-  { value: "seafood", label: "Seafood" },
   { value: "breakfast", label: "Breakfast" },
   { value: "dessert", label: "Dessert" },
-  { value: "italian", label: "Italian" },
+  { value: "drinks", label: "Drinks" },
+  { value: "seafood", label: "Seafood" },
+  { value: "pizza", label: "Pizza" },
+  { value: "mexican", label: "Mexican" },
   { value: "american", label: "American" },
+  { value: "italian", label: "Italian" },
   { value: "asian", label: "East Asian" },
   { value: "indian", label: "Indian" },
+  { value: "healthy", label: "Healthy" },
   { value: "get", label: "Available on GET App" },
 ];
 
@@ -1163,6 +1163,7 @@ function App() {
   const [userLat, setUserLat] = useState(null);
   const [userLong, setUserLong] = useState(null);
 
+  // Retriving the user's current latitude and longitude
   useEffect(() => {
     if ("geolocation" in navigator) {
       console.log("Available");
@@ -1179,6 +1180,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* Top-left hamburger menu side bar */}
       <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle">
@@ -1204,6 +1206,7 @@ function App() {
           </li>
         </ul>
       </div>
+      {/* Main Google map with restaurant markers */}
       <div id="things">
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=11MSZMur_QnNCaeMNLguURSVG0_dRA5E&ehbc=2E312F"
@@ -1245,17 +1248,17 @@ function App() {
         sortedRestaurantArray.map((restaurant) => {
           if (
             selectedCategory == "all" ||
-            (restaurant.isPizza && selectedCategory == "pizza") ||
-            (restaurant.isDrinks && selectedCategory == "drinks") ||
-            (restaurant.isMexican && selectedCategory == "mexican") ||
-            (restaurant.isHealthy && selectedCategory == "healthy") ||
-            (restaurant.isSeafood && selectedCategory == "seafood") ||
             (restaurant.isBreakfast && selectedCategory == "breakfast") ||
-            (restaurant.isDessert && selectedCategory == "dessert") ||
+            (restaurant.isDrinks && selectedCategory == "drinks") ||
+            (restaurant.isSeafood && selectedCategory == "seafood") ||
+            (restaurant.isPizza && selectedCategory == "pizza") ||
+            (restaurant.isMexican && selectedCategory == "mexican") ||
             (restaurant.isItalian && selectedCategory == "italian") ||
             (restaurant.isAmerican && selectedCategory == "american") ||
             (restaurant.isAsian && selectedCategory == "asian") ||
             (restaurant.isIndian && selectedCategory == "indian") ||
+            (restaurant.isHealthy && selectedCategory == "healthy") ||
+            (restaurant.isDessert && selectedCategory == "dessert") ||
             (restaurant.isGetApp && selectedCategory == "get")
           )
             return (
@@ -1277,17 +1280,17 @@ function App() {
         sortedRestaurantArrayDecresasing.map((restaurant) => {
           if (
             selectedCategory == "all" ||
-            (restaurant.isPizza && selectedCategory == "pizza") ||
-            (restaurant.isDrinks && selectedCategory == "drinks") ||
-            (restaurant.isMexican && selectedCategory == "mexican") ||
-            (restaurant.isHealthy && selectedCategory == "healthy") ||
-            (restaurant.isSeafood && selectedCategory == "seafood") ||
             (restaurant.isBreakfast && selectedCategory == "breakfast") ||
-            (restaurant.isDessert && selectedCategory == "dessert") ||
+            (restaurant.isDrinks && selectedCategory == "drinks") ||
+            (restaurant.isSeafood && selectedCategory == "seafood") ||
+            (restaurant.isPizza && selectedCategory == "pizza") ||
+            (restaurant.isMexican && selectedCategory == "mexican") ||
             (restaurant.isItalian && selectedCategory == "italian") ||
             (restaurant.isAmerican && selectedCategory == "american") ||
             (restaurant.isAsian && selectedCategory == "asian") ||
             (restaurant.isIndian && selectedCategory == "indian") ||
+            (restaurant.isHealthy && selectedCategory == "healthy") ||
+            (restaurant.isDessert && selectedCategory == "dessert") ||
             (restaurant.isGetApp && selectedCategory == "get")
           )
             return (
@@ -1304,6 +1307,7 @@ function App() {
             );
         })}
 
+      {/* "About Us" section at the bottom of the page */}
       <div className="breakFoot"></div>
       <div className="aboutUs">
         <p className="fillerText">About Us</p>
@@ -1312,14 +1316,11 @@ function App() {
       about us
       </div>
       <div className="aboutUsBody">
-        <div className="rectangle">textinside rec</div>
-        <div className="rectangle">textinside rec</div>
-        <div className="rectangle">textinside rec</div>
-        <div className="rectangle">textinside rec</div>
-      </div>
-      <div className="breakFoot"></div>
-      <div className="aboutUs">
-        <p className="fillerText">About Us</p>
+        <p className="aboutUsText">
+          This project was envisioned and built by <br></br>
+          Kiera Thomas, George Wang, Sarah Besser, and Justin Munoz <br></br>
+          during VandyHacks IX. Connect with us on LinkedIn!
+        </p>
       </div>
     </div>
   );
