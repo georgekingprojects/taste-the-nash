@@ -201,3 +201,13 @@ html {
   right: 0;
   margin: 2rem;
 }
+
+/* About Us Formatting */ 
+.aboutUs { 
+  background-color:#d39039; 
+} 
+
+.aboutUsTitle { 
+  font-size: 8rem; 
+  text-align: center; 
+}

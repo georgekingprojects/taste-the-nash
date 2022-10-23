@@ -1224,6 +1224,12 @@ function App() {
               </>
             );
         })}
+
+        <div className="aboutUs">
+          <div className="aboutUsTitle">
+            About Us
+          </div>
+        </div>
     </div>
   );
 }
