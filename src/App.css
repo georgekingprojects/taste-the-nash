@@ -3,6 +3,10 @@
   font-family: 'Lucida Console';
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #dropdowns {
   display: table-row;
   text-align: left;
@@ -100,7 +104,7 @@
 }
 .menu__item {
   display: block;
-  padding: 12px 33px;
+  padding: 12px 3rem;
   color: #c2822f;
   font-family: 'Lucida Console';
   font-size: 20px;
@@ -159,7 +163,7 @@
 }
 
 
- /* Styling for the restaurant boxes */
+ /* Styling for the restaurant boxes and popup*/
 .restaurantBox {
   text-align: center;
   height: 4rem;
