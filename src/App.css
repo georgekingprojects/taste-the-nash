@@ -186,7 +186,10 @@ iframe {
   margin-top: calc(100vh - 85vh - 20px);
   background: #fff;
   border-radius: 4px;
-  padding: 20px;
+  padding-top: 1.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 3.7rem;
   border: 1px solid #999;
   overflow: auto;
 }
@@ -197,7 +200,7 @@ iframe {
   content: "x";
   cursor: pointer;
   position: fixed;
-  right: calc(15% - 30px);
+  right: calc(15% - 40px);
   top: calc(100vh - 85vh - 33px);
   background: #ededed;
   width: 25px;
@@ -208,8 +211,6 @@ iframe {
   border: 1px solid #999;
   font-size: 20px;
 }
-
-/* Styling for the restaurant boxes and pop-up*/
 
 /* The blue box preview for each restaurant */
 .restaurantBox {
@@ -280,8 +281,8 @@ iframe {
   color: #FFFFFF;
   text-align: center;
   font-size: 28px;
-  padding: 10px;
-  width: 200px;
+  padding: 8px;
+  width: 190px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
