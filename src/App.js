@@ -1123,12 +1123,12 @@ function App() {
           <span></span>
         </label>
       <h1 id="taste">Taste the Nash</h1>
-    <ul class="menu__box">
-      <li><a class="menu__item" href="#">Home</a></li>
-      <li><a class="menu__item" href="#">Sort</a></li>
-      <li><a class="menu__item" href="#">About</a></li>
-    </ul>
-  </div>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#">Home</a></li>
+        <li><a class="menu__item" href="#">Sort</a></li>
+        <li><a class="menu__item" href="#">About</a></li>
+      </ul>
+      </div>
       <div id="things">
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=11MSZMur_QnNCaeMNLguURSVG0_dRA5E&ehbc=2E312F"
@@ -1139,28 +1139,30 @@ function App() {
       </div>
 
       {/*Restaurant component stuff*/}
-      <div id="category" href="category">
-        {/*Category selector*/}
-        <h2>Category</h2>
-        <Select
-          defaultValue={selectedCategory}
-          onChange={(v) => {
-            setSelectedCategory(v.value);
-          }}
-          options={categoryOptions}
-        />
-      </div>
+      <div id="dropdowns">
+        <div id="category" href="category">
+          {/*Category selector*/}
+          <h2>Category</h2>
+          <Select
+            defaultValue={selectedCategory}
+            onChange={(v) => {
+              setSelectedCategory(v.value);
+            }}
+            options={categoryOptions}
+          />
+        </div>
 
-      <div id="select" href="sort">
-        {/*Sort by selector*/}
-        <h2>Sort by</h2>
-        <Select
-          defaultValue={selectedSort}
-          onChange={(v) => {
-            setSelectedSort(v.value);
-          }}
-          options={sortOptions}
-        />
+        <div id="select" href="sort">
+          {/*Sort by selector*/}
+          <h2>Sort by</h2>
+          <Select
+            defaultValue={selectedSort}
+            onChange={(v) => {
+              setSelectedSort(v.value);
+            }}
+            options={sortOptions}
+          />
+        </div>
       </div>
 
       {/*Increasing Price*/}

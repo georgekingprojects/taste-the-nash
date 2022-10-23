@@ -3,17 +3,21 @@
 }
 
 #dropdowns {
+  display: table-row;
   text-align: left;
-  width: 20rem;
   margin: 5rem;
 }
 
 #category {
-  padding: 1px;
+  display: table-cell;
+  width: 20rem;
+  padding-left: 1.5rem;
 }
 
 #select {
-  width: "300px";
+  display: table-cell;
+  width: 20rem;
+  padding-left: 2.5rem;
 }
 
 #taste {
