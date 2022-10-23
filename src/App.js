@@ -1329,7 +1329,9 @@ function App() {
 
       <div className="breakFoot"></div>
       <div className="aboutUs">
+        <div className="fillerText">
         About Us
+        </div>
       </div>
       <div className="aboutUsTitle" id="aboutUsSection">
       <marquee behavior="scroll" direction="right" scrollamount = "50">about us</marquee>
