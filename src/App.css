@@ -28,6 +28,22 @@ html {
   z-index: 11;
 }
 
+#title {
+  text-align: center;
+  color: black;
+  position: absolute;
+  place-self: center;
+  top: 5em;
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 4rem;
+  letter-spacing: 2rem;
+  width: 100rem;
+  z-index: 100;
+}
+
 /* linear-gradient(to bottom, rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.75)) */
 #taste {
   text-align: center;
@@ -39,8 +55,9 @@ html {
   padding: 2rem;
   margin: 0;
   position: relative;
-  top: 1em;
+  top: 2em;
   height: 6.4rem;
+  font-family: 'Niconne', cursive;
 }
 
 #things {
@@ -182,9 +199,9 @@ html {
   height: 4rem;
   margin: 2rem;
   cursor: pointer;
-  background-color: #c094c4;
+  background-color: #caf0ff;
   border-radius: 15px;
-  border: 2px solid rgb(91, 70, 211);
+  border: 2px solid rgb(110, 156, 255);
   justify-content: space-between;
   width: 20%;
   float: left;
@@ -196,10 +213,9 @@ html {
 }
 
 .restaurantTitle {
-  text-align: center;
   font-size: 4rem;
   text-align: left;
-  margin-left: 4rem;
+  margin-left: 20rem;
   background-color: #d39039;
 }
 
@@ -212,8 +228,8 @@ html {
 }
 
 .popupImg {
-  width: 200px;
-  height: 200px;
+  width: 15rem;
+  height: 15rem;
   float: left;
 }
 
