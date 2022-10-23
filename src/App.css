@@ -241,6 +241,9 @@ button:hover {
   text-align: left;
   margin-left: 20rem;
   background-image: linear-gradient(to right, #f7982d, #f1cda3);
+  border-radius: 1rem;
+  padding-left: 1.5rem;
+  padding-bottom: 0.3rem;
 }
 
 .popupButton {
