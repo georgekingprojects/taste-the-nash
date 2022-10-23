@@ -1268,40 +1268,21 @@ function App() {
             );
         })}
 
-<<<<<<< HEAD
-
-        <div className="breakFoot">
-        </div>
-        <div className="aboutUs">
-        <p className="fillerText">
-            About Us
-            </p>
-          </div>
-          <div className="aboutUsTitle" id="aboutUsSection">
-              about us
-          </div>
-          <div className="aboutUsBody">
-            <div className="rectangle"> 
-              textinside rec
-            </div>
-            <div className="rectangle"> 
-              textinside rec
-            </div>
-            <div className="rectangle"> 
-              textinside rec
-            </div>
-            <div className="rectangle"> 
-              textinside rec
-            </div>
-          </div>
-=======
       <div className="breakFoot"></div>
       <div className="aboutUs">
         <p className="fillerText">About Us</p>
->>>>>>> 57cf7082b81bf3a13985630f90695fba9398fd5f
       </div>
       <div className="aboutUsTitle" id="aboutUsSection">
         about us
+      </div>
+      <div className="aboutUsBody">
+        <div className="rectangle">textinside rec</div>
+      </div>
+      <div className="aboutUsBody">
+        <div className="rectangle">textinside rec</div>
+      </div>
+      <div className="aboutUsBody">
+        <div className="rectangle">textinside rec</div>
       </div>
       <div className="aboutUsBody">
         <div className="rectangle">textinside rec</div>
