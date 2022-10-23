@@ -916,7 +916,7 @@ var OSCARSTACOSHOP = {
   address: "2323 Elliston Pl, Nashville, TN 37203",
   imgLoc: "oscarstacoshop.png",
   menuUrl: "https://www.toasttab.com/oscars-taco-shop-vandy-2323-elliston-place/v3/",
-  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25772.84919283532!2d-86.82388209088118!3d36.15180182204951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88646740c3800c29%3A0x3daf1389b6c0a667!2sOscar&#39;s%20Taco%20Shop%20at%20Vandy!5e0!3m2!1sen!2sus!4v1666508472977!5m2!1sen!2sus" width="600",
+  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25772.84919283532!2d-86.82388209088118!3d36.15180182204951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88646740c3800c29%3A0x3daf1389b6c0a667!2sOscar&#39;s%20Taco%20Shop%20at%20Vandy!5e0!3m2!1sen!2sus!4v1666508472977!5m2!1sen!2sus",
   isGetApp: false,
   isDrinks: false,
   isMexican: true,
