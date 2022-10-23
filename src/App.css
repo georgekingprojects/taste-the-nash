@@ -211,6 +211,12 @@ html {
   margin: 2rem;
 }
 
+.popupImg {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
 .breakFoot {
   background-color: white;
 }

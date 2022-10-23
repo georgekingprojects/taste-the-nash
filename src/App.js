@@ -1155,7 +1155,7 @@ function App() {
       <ul class="menu__box">
         <li><a class="menu__item" href="#top">Home</a></li>
         <li><a class="menu__item" href="#sortSection">Sort</a></li>
-        <li><a class="menu__item" href="#bottom">About</a></li>
+        <li><a class="menu__item" href="#aboutUsSection">About</a></li>
       </ul>
       </div>
       <div id="things">
@@ -1262,7 +1262,7 @@ function App() {
             About Us
             </p>
           </div>
-          <div className="aboutUsTitle">
+          <div className="aboutUsTitle" id="aboutUsSection">
               about us
           </div>
           <div className="aboutUsBody">
