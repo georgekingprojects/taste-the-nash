@@ -113,7 +113,7 @@ function Restaurant(props) {
           }}
         >
           <img
-          class="imgOnBox"
+            class="imgOnBox"
             src={
               props.name == "The Ainsworth"
                 ? require("./imgfiles/ainsworth.png")
@@ -337,29 +337,64 @@ function Restaurant(props) {
               </div>
               <p>Address: {props.restaurant.address}</p>
               <p>Price Rating: {props.restaurant.price}</p>
-              <a href={props.menu}>MENU</a>
-              <button className="buttonMenu">
-                <span>See Menu</span>
-              </button>
+              <a href={props.menu} target="_blank">
+                <button className="buttonMenu">
+                  <span>See Menu</span>
+                </button>
+              </a>
               <form onSubmit={handleSubmit}>
-                <label>Leave a Recommendation!</label>
-                <input
-                  type="text"
-                  placeholder="Name..."
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    width: "35%",
+                    float: "right",
+                  }}
+                >
+                  <label>
+                    <h3>Leave a Recommendation!</h3>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Name..."
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                  <textarea
+                    style={{
+                      marginTop: ".2em",
+                      width: "90%",
+                      margin: ".2em auto",
+                    }}
+                    placeholder="Recommendation e.g. Beef Taco, etc..."
+                    cols="40"
+                    rows="5"
+                    type="text"
+                    value={review}
+                    onChange={(e) => setReview(e.target.value)}
+                  >
+                    {/*<input
+                      //style={{ height: "3em" }}
+                      type="text"
+                      //placeholder="Recommendation e.g. Beef Taco, etc..."
+                      value={review}
+                      onChange={(e) => setReview(e.target.value)}
+                    />*/}
+                  </textarea>
 
-                <input
-                  type="text"
-                  placeholder="Recommendation e.g. Beef Taco, etc..."
-                  value={review}
-                  onChange={(e) => setReview(e.target.value)}
-                />
-
-                <button type="submit">Submit</button>
+                  <button type="submit">Submit</button>
+                </div>
               </form>
-              <div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "25%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "auto",
+                }}
+              >
                 <h3>Menu Recommendations</h3>
                 <button
                   onClick={() => {
@@ -378,14 +413,22 @@ function Restaurant(props) {
                   reviews &&
                   reviews.map((review) => {
                     return (
-                      <div>
+                      <div
+                        style={{
+                          borderStyle: "solid",
+                          borderWidth: "2px",
+                          borderRadius: 5,
+                          marginTop: 1,
+                        }}
+                      >
                         <p>Name: {review.name}</p>
                         <p>Recommendation: {review.review}</p>
                       </div>
                     );
                   })}
+                {!reviews[0] && seeReviews && <p>No recommendations yet.</p>}
               </div>
-              {!reviews[0] && seeReviews && <p>No recommendations yet.</p>}
+
               <button className="popupButton"> Text Me Directions! </button>
             </>
           }

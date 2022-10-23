@@ -35,7 +35,8 @@ var BANHMIANDROLL = {
   address: "1808 20th Ave S Ste 101, Nashville, TN 37212",
   imgLoc: "banhmiroll.png",
   menuUrl: "https://banhmiandrollplus.com/our-menu/",
-  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.236339352223!2d-86.80158128478375!3d36.136458380090566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886467abb7b11605%3A0x6cf63c224b8c72ee!2sBanh%20mi%20and%20roll%20%2B!5e0!3m2!1sen!2sus!4v1666504563998!5m2!1sen!2sus",
+  mapUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.236339352223!2d-86.80158128478375!3d36.136458380090566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886467abb7b11605%3A0x6cf63c224b8c72ee!2sBanh%20mi%20and%20roll%20%2B!5e0!3m2!1sen!2sus!4v1666504563998!5m2!1sen!2sus",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -57,7 +58,8 @@ var BARISTAPARLOR = {
   address: "1817 21st Ave S, Nashville, TN 37212",
   imgLoc: "baristaparlor.png",
   menuUrl: "https://baristaparlor.com/menu/",
-  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25777.891139961313!2d-86.81690220306011!3d36.136457085965226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886467d30c25247f%3A0xc0746e0bde21118!2sBarista%20Parlor%20Hillsboro%20Village!5e0!3m2!1sen!2sus!4v1666504620890!5m2!1sen!2sus",
+  mapUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25777.891139961313!2d-86.81690220306011!3d36.136457085965226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886467d30c25247f%3A0xc0746e0bde21118!2sBarista%20Parlor%20Hillsboro%20Village!5e0!3m2!1sen!2sus!4v1666504620890!5m2!1sen!2sus",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -79,7 +81,8 @@ var BISCUITLOVE = {
   address: "2001 Belcourt Ave Nashville, TN 37212",
   imgLoc: "biscuitlove.png",
   menuUrl: "https://www.biscuitlove.com/menu",
-  menuUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5419.122697370997!2d-86.80339793532193!3d36.13662165747132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864669f0694a49d%3A0xdf3d71804ee65e8e!2sBiscuit%20Love%20(Hillsboro%20Village)!5e0!3m2!1sen!2sus!4v1666504687026!5m2!1sen!2sus",
+  menuUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5419.122697370997!2d-86.80339793532193!3d36.13662165747132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864669f0694a49d%3A0xdf3d71804ee65e8e!2sBiscuit%20Love%20(Hillsboro%20Village)!5e0!3m2!1sen!2sus!4v1666504687026!5m2!1sen!2sus",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -625,7 +628,8 @@ var KOISUSHI = {
   price: "$$",
   address: "2214 Elliston Pl, Nashville, TN 37203",
   imgLoc: "koisushi.png",
-  menuUrl: "https://www.talech.com/biz/619853/Koi-Sushi-Thai-East-Llc-Nashville-TN#/menu",
+  menuUrl:
+    "https://www.talech.com/biz/619853/Koi-Sushi-Thai-East-Llc-Nashville-TN#/menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -709,7 +713,7 @@ var WENDYS = {
   price: "$",
   address: "2603 West End Ave, Nashville, TN 37203",
   imgLoc: "wendys.png",
-  menuUrl: 'https://order.wendys.com/categories?site=menu',
+  menuUrl: "https://order.wendys.com/categories?site=menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -876,7 +880,8 @@ var OSCARSTACOSHOP = {
   price: "$",
   address: "2323 Elliston Pl, Nashville, TN 37203",
   imgLoc: "oscarstacoshop.png",
-  menuUrl: "https://www.toasttab.com/oscars-taco-shop-vandy-2323-elliston-place/v3/",
+  menuUrl:
+    "https://www.toasttab.com/oscars-taco-shop-vandy-2323-elliston-place/v3/",
   isGetApp: false,
   isDrinks: false,
   isMexican: true,
@@ -1175,12 +1180,24 @@ function App() {
           <span></span>
         </label>
         <h1 id="title">Taste the Nash</h1>
-      <div id="taste"></div>
-      <ul class="menu__box">
-        <li><a class="menu__item" href="#top">Home</a></li>
-        <li><a class="menu__item" href="#sortSection">Sort</a></li>
-        <li><a class="menu__item" href="#aboutUsSection">About</a></li>
-      </ul>
+        <div id="taste"></div>
+        <ul class="menu__box">
+          <li>
+            <a class="menu__item" href="#top">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="#sortSection">
+              Sort
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="#aboutUsSection">
+              About
+            </a>
+          </li>
+        </ul>
       </div>
       <div id="things">
         <iframe
@@ -1280,24 +1297,24 @@ function App() {
             );
         })}
 
-
-        <div className="breakFoot">
-        </div>
-        <div className="aboutUs">
-        <p className="fillerText">
-            <marquee behavior="scroll" scrollamount = "50">About Us</marquee>
-            </p>
-          </div>
-          <div className="aboutUsTitle" id="aboutUsSection">
-              <marquee behavior="scroll" scrollamount="50" >about us</marquee>
-          </div>
-          <div className="aboutUsBody">
-            <div className="rectangle"> 
-              textinside rec
-            </div>
-          </div>
+      <div className="breakFoot"></div>
+      <div className="aboutUs">
+        <p className="fillerText"><marquee behavior="scroll" direction="right" scrollamount = "50">About Us</marquee></p>
       </div>
-  
+      <div className="aboutUsTitle" id="aboutUsSection">
+      <marquee behavior="scroll" direction="right" scrollamount = "50">about us</marquee>
+      </div>
+      <div className="aboutUsBody">
+        <div className="rectangle">textinside rec</div>
+        <div className="rectangle">textinside rec</div>
+        <div className="rectangle">textinside rec</div>
+        <div className="rectangle">textinside rec</div>
+      </div>
+      <div className="breakFoot"></div>
+      <div className="aboutUs">
+        <p className="fillerText">About Us</p>
+      </div>
+    </div>
   );
 }
 
