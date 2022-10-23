@@ -222,7 +222,7 @@ html {
   font-size: 4rem;
   text-align: left;
   margin-left: 20rem;
-  background-color: #d39039;
+  background-image: linear-gradient(to right,#f7982d, #f1cda3);
 }
 
 .popupButton {
