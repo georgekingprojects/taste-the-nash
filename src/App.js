@@ -1285,11 +1285,11 @@ function App() {
         </div>
         <div className="aboutUs">
         <p className="fillerText">
-            About Us
+            <marquee behavior="scroll" scrollamount = "50">About Us</marquee>
             </p>
           </div>
           <div className="aboutUsTitle" id="aboutUsSection">
-              about us
+              <marquee behavior="scroll" scrollamount="50" >about us</marquee>
           </div>
           <div className="aboutUsBody">
             <div className="rectangle"> 
