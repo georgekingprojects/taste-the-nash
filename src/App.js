@@ -1277,15 +1277,13 @@ function App() {
       </div>
       <div className="aboutUsBody">
         <div className="rectangle">textinside rec</div>
-      </div>
-      <div className="aboutUsBody">
+        <div className="rectangle">textinside rec</div>
+        <div className="rectangle">textinside rec</div>
         <div className="rectangle">textinside rec</div>
       </div>
-      <div className="aboutUsBody">
-        <div className="rectangle">textinside rec</div>
-      </div>
-      <div className="aboutUsBody">
-        <div className="rectangle">textinside rec</div>
+      <div className="breakFoot"></div>
+      <div className="aboutUs">
+        <p className="fillerText">About Us</p>
       </div>
     </div>
   );
