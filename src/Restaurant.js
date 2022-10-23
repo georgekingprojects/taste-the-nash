@@ -23,6 +23,7 @@ function Restaurant(props) {
   const [seeReviews, setSeeReviews] = useState(false);
   const [buttonText, setButtonText] = useState("Show Recommendations");
 
+  {/* Calculating distance from restaurants using latitude and longitude */}
   let lat2 = 0;
   let long2 = 0;
   let d = null;
@@ -112,6 +113,7 @@ function Restaurant(props) {
             marginTop: "-10px",
           }}
         >
+          {/* Icons for each restaurant in the blue boxes */}
           <img
             class="imgOnBox"
             src={
@@ -228,6 +230,7 @@ function Restaurant(props) {
         <Popup
           content={
             <>
+            {/* Icons for each restaurant in the pop-up boxes */}
               <img
                 class="popupImg"
                 src={
@@ -342,6 +345,16 @@ function Restaurant(props) {
                   <span>See Menu</span>
                 </button>
               </a>
+
+              {/* Adding maps to the popup boxes*/}
+              <iframe
+                src={props.mapUrl}
+                width="200rem"
+                height="140rem"
+                href="map"
+              ></iframe>
+
+              {/* Recommendation input boxes and buttons*/}
               <form onSubmit={handleSubmit}>
                 <div
                   style={{
@@ -373,13 +386,7 @@ function Restaurant(props) {
                     value={review}
                     onChange={(e) => setReview(e.target.value)}
                   >
-                    {/*<input
-                      //style={{ height: "3em" }}
-                      type="text"
-                      //placeholder="Recommendation e.g. Beef Taco, etc..."
-                      value={review}
-                      onChange={(e) => setReview(e.target.value)}
-                    />*/}
+
                   </textarea>
 
                   <button type="submit">Submit</button>
