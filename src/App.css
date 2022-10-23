@@ -77,10 +77,6 @@ html {
   background-size: cover;
 }
 
-iframe {
-  border:transparent;
-}
-
 @media only screen and (max-device-width: 1366px) {
   #things {
     background-attachment: scroll;
@@ -256,6 +252,13 @@ iframe {
   border-radius: 0.5rem;
 }
 
+/* Google map on the pop-up box */
+.popupMap {
+  bottom: -220px;
+  margin: 0 auto;
+  left: -220px;
+}
+
 /* The restaurant name text that appears on each blue box */
 .restaurantTitle {
   font-size: 4rem;
@@ -268,6 +271,7 @@ iframe {
   padding-bottom: 0rem;
   font-family: Garamond;
   color: white;
+  margin-top: 4rem;
 }
 
 /* The icon that appears on the pop-up box */
@@ -275,10 +279,6 @@ iframe {
   width: 15rem;
   height: 15rem;
   float: left;
-}
-
-#popupmap {
-  padding: 1rem;
 }
 
 /* The "See Menu" button that appears on the pop-up box */
@@ -394,3 +394,5 @@ iframe {
   border-right: 0;
   border-top: 0;
 }
+
+

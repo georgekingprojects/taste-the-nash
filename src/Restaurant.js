@@ -340,8 +340,8 @@ function Restaurant(props) {
                 <b> {props.name} </b>
               </div>
               <div>
-              <p>Address: {props.restaurant.address}</p>
-              <p>Price Rating: {props.restaurant.price}</p>
+              <p> <b>Address: </b>{props.restaurant.address}</p>
+              <p> <b>Price Rating: </b>{props.restaurant.price}</p>
               <a href={props.menu} target="_blank">
                 <button className="buttonMenu">
                   <span>See Menu</span>
@@ -430,11 +430,12 @@ function Restaurant(props) {
                   })}
                 {!reviews[0] && seeReviews && <p>No recommendations yet.</p>}
                 {/* Adding maps to the popup boxes*/}
-                <iframe id="popupmap"
+                <iframe id="popupmap" 
                       src={props.mapUrl}
-                      width="200rem"
-                      height="140rem"
+                      width="600px"
+                      height="300px"
                       href="map"
+                      align="left"
                     ></iframe>
               </div>
 

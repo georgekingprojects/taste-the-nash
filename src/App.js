@@ -1250,6 +1250,7 @@ function App() {
           width="1000rem"
           height="700rem"
           href="map"
+          border= "transparent"
         ></iframe>
       </div>
 
