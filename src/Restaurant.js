@@ -429,7 +429,6 @@ function Restaurant(props) {
                 {!reviews[0] && seeReviews && <p>No recommendations yet.</p>}
               </div>
 
-              <button className="popupButton"> Text Me Directions! </button>
             </>
           }
           handleClose={togglePopup}
