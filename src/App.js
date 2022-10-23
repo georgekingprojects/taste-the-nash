@@ -1213,14 +1213,14 @@ function App() {
             (restaurant.isGetApp && selectedCategory == "get")
           )
             return (
-              <>
+              <div className="bottomBoxes">
                 <Restaurant
                   name={restaurant.name}
                   restaurant={restaurant}
                   userLat={userLat}
                   userLong={userLong}
                 />
-              </>
+              </div>
             );
         })}
 
@@ -1243,17 +1243,35 @@ function App() {
             (restaurant.isGetApp && selectedCategory == "get")
           )
             return (
-              <>
+              <div className="bottomBoxes">
                 <Restaurant
                   name={restaurant.name}
                   restaurant={restaurant}
                   userLat={userLat}
                   userLong={userLong}
                 />
-              </>
+              </div>
             );
         })}
-    </div>
+
+
+        <div className="breakFoot">
+        </div>
+        <div className="aboutUs">
+        <p className="fillerText">
+            About Us
+            </p>
+          </div>
+          <div className="aboutUsTitle">
+              about us
+          </div>
+          <div className="aboutUsBody">
+            <div className="rectangle"> 
+              textinside rec
+            </div>
+          </div>
+      </div>
+  
   );
 }
 
