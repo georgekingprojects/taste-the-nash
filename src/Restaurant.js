@@ -1,7 +1,9 @@
 import Popup from "./Popup.js";
 import React, { useState, useEffect } from "react";
+
 function Restaurant(props) {
   const [isOpen, setIsOpen] = useState(false);
+
   let lat2 = 0;
   let long2 = 0;
   let d = null;
@@ -43,7 +45,10 @@ function Restaurant(props) {
               <div className="restaurantTitle">
                 <b> {props.name} </b>
               </div>
+              <p>Address: {props.restaurant.address}</p>
+              <p>Price Rating: {props.restaurant.price}</p>
               <button className="popupButton"> Text Me Directions! </button>
+              {}
             </>
           }
           handleClose={togglePopup}
