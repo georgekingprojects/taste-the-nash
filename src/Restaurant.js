@@ -397,8 +397,8 @@ function Restaurant(props) {
                   margin: "auto",
                 }}
               >
-                <h3>Menu Recommendations</h3>
-                <button
+                <h3 className="menuRecs">Menu Recommendations</h3>
+                <button className="showRec"
                   onClick={() => {
                     if (seeReviews) {
                       setSeeReviews(false);

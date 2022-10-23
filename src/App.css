@@ -259,6 +259,10 @@ html {
   left: -220px;
 }
 
+.showRec {
+  margin-bottom: 2rem;
+}
+
 /* The restaurant name text that appears on each blue box */
 .restaurantTitle {
   font-size: 4rem;
