@@ -196,10 +196,9 @@ html {
 }
 
 .restaurantTitle {
-  text-align: center;
   font-size: 4rem;
   text-align: left;
-  margin-left: 4rem;
+  margin-left: 20rem;
   background-color: #d39039;
 }
 
@@ -212,8 +211,8 @@ html {
 }
 
 .popupImg {
-  width: 200px;
-  height: 200px;
+  width: 15rem;
+  height: 15rem;
   float: left;
 }
 
