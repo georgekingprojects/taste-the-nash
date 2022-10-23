@@ -4,7 +4,7 @@ import Restaurant from "./Restaurant.js";
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import { db } from "./firebase";
-import "@fontsource/niconne"
+import "@fontsource/niconne";
 
 // JSON data for each restaurant
 
@@ -1153,12 +1153,24 @@ function App() {
           <span></span>
         </label>
         <h1 id="title">Taste the Nash</h1>
-      <div id="taste"></div>
-      <ul class="menu__box">
-        <li><a class="menu__item" href="#top">Home</a></li>
-        <li><a class="menu__item" href="#sortSection">Sort</a></li>
-        <li><a class="menu__item" href="#aboutUsSection">About</a></li>
-      </ul>
+        <div id="taste"></div>
+        <ul class="menu__box">
+          <li>
+            <a class="menu__item" href="#top">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="#sortSection">
+              Sort
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="#aboutUsSection">
+              About
+            </a>
+          </li>
+        </ul>
       </div>
       <div id="things">
         <iframe
@@ -1221,7 +1233,6 @@ function App() {
                   restaurant={restaurant}
                   userLat={userLat}
                   userLong={userLong}
-                  menu={restaurant.menuUrl}
                 />
               </div>
             );
@@ -1252,30 +1263,22 @@ function App() {
                   restaurant={restaurant}
                   userLat={userLat}
                   userLong={userLong}
-                  menu={restaurant.menuUrl}
                 />
               </div>
             );
         })}
 
-
-        <div className="breakFoot">
-        </div>
-        <div className="aboutUs">
-        <p className="fillerText">
-            About Us
-            </p>
-          </div>
-          <div className="aboutUsTitle" id="aboutUsSection">
-              about us
-          </div>
-          <div className="aboutUsBody">
-            <div className="rectangle"> 
-              textinside rec
-            </div>
-          </div>
+      <div className="breakFoot"></div>
+      <div className="aboutUs">
+        <p className="fillerText">About Us</p>
       </div>
-  
+      <div className="aboutUsTitle" id="aboutUsSection">
+        about us
+      </div>
+      <div className="aboutUsBody">
+        <div className="rectangle">textinside rec</div>
+      </div>
+    </div>
   );
 }
 
