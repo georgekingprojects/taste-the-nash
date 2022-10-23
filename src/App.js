@@ -80,7 +80,7 @@ var BISCUITLOVE = {
   address: "2001 Belcourt Ave Nashville, TN 37212",
   imgLoc: "biscuitlove.png",
   menuUrl: "https://www.biscuitlove.com/menu",
-  menuUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5419.122697370997!2d-86.80339793532193!3d36.13662165747132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864669f0694a49d%3A0xdf3d71804ee65e8e!2sBiscuit%20Love%20(Hillsboro%20Village)!5e0!3m2!1sen!2sus!4v1666504687026!5m2!1sen!2sus",
+  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5419.122697370997!2d-86.80339793532193!3d36.13662165747132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864669f0694a49d%3A0xdf3d71804ee65e8e!2sBiscuit%20Love%20(Hillsboro%20Village)!5e0!3m2!1sen!2sus!4v1666504687026!5m2!1sen!2sus",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -498,7 +498,7 @@ var THESLIDERHOUSE = {
   address: "1907 Division St, Nashville, TN 37203",
   imgLoc: "sliderhouse.png",
   menuurl: "https://sliderhousensh.com/#menu",
-  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1915.6305349745817!2d-86.79758704307217!3d36.149670538259244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88646693fe10fc69%3A0xae556a43976fa75c!2sThe%20Slider%20House!5e0!3m2!1sen!2sus!4v1666506748083!5m2!1sen!2sus",
+  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.684504683849!2d-86.79852198478326!3d36.14989438008769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88646693fe10fc69%3A0xae556a43976fa75c!2sThe%20Slider%20House!5e0!3m2!1sen!2sus!4v1666513264918!5m2!1sen!2sus",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -806,10 +806,7 @@ var FRUTTABOWLS = {
   address: "2424 Elliston Pl, Nashville, TN 37203",
   imgLoc: "fruttabowl.png",
   menuUrl: "https://fruttabowls.com/",
-<<<<<<< HEAD
   mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51545.69250941223!2d-86.83834079102705!3d36.15181076235519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886467a23347e751%3A0xc6abc7b4dcb381d3!2sFrutta%20Bowls!5e0!3m2!1sen!2sus!4v1666507782000!5m2!1sen!2sus",
-=======
->>>>>>> aea16d6844098def9f2d34ff672d5f9962156129
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
