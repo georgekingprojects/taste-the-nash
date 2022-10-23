@@ -68,9 +68,23 @@ html {
 /* Area with utensils background */
 #things {
   text-align: center;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   background-image: url("spoonforkbackground.png");
   background-size: 65rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+iframe {
+  border:transparent;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  #things {
+    background-attachment: scroll;
+  }
 }
 
 /* Styling for the hamburger and side bar */
@@ -324,12 +338,9 @@ html {
   margin-left: 0.5rem;
 }
 
-/* The individual gray rectangles in the About Me */
-.rectangle {
-  float: left;
-  background-color: rgb(109, 112, 109);
-  color: rgb(16, 17, 16);
-  width: 46rem;
-  height: 20rem;
-  border: 0.25rem solid rgb(0, 0, 0);
+.aboutUsText {
+  background-color:rgb(0, 0, 0);
+  color: rgb(109, 112, 109);
+  font-size: 1.5rem;
+  text-align: center;
 }
