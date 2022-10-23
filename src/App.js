@@ -1122,7 +1122,7 @@ function App() {
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
-      <h1 id="taste">Taste the Nash</h1>
+      <h1 id="taste">Tast the Nash</h1>
       <ul class="menu__box">
         <li><a class="menu__item" href="#top">Home</a></li>
         <li><a class="menu__item" href="#sortSection">Sort</a></li>
