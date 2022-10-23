@@ -616,7 +616,7 @@ var FABLE = {
   long: -86.81273230847562,
 };
 var KOISUSHI = {
-  name: "Koi Sushi & Tai",
+  name: "Koi Sushi & Thai",
   price: "$$",
   address: "2214 Elliston Pl, Nashville, TN 37203",
   imgLoc: "koisushi.png",
