@@ -1,4 +1,5 @@
 .App {
+  margin: 0;
   position: relative;
   margin: -5em;
 }
@@ -6,19 +7,20 @@
 #dropdowns {
   display: table-row;
   text-align: left;
-  margin: 5rem;
+  margin: 5rem;z-index: 11;
 }
 
 #category {
   display: table-cell;
   width: 20rem;
-  padding-left: 1.5rem;
+  padding-left: 1.5rem;z-index: 11;
 }
 
 #select {
   display: table-cell;
   width: 20rem;
   padding-left: 2.5rem;
+  z-index: 11;
 }
 
 /* linear-gradient(to bottom, rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.75)) */
@@ -46,6 +48,7 @@
 /* Styling for the hamburger and side bar */
 #menu__toggle {
   opacity: 0;
+  z-index: 18;
 }
 #menu__toggle:checked + .menu__btn > span {
   transform: rotate(45deg);
@@ -64,11 +67,11 @@
 .menu__btn {
   position: fixed;
   top: 20px;
-  left: 20px;
+  left: 10px;
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 18;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -79,6 +82,7 @@
   height: 2px;
   background-color: #c2822f;
   transition-duration: .25s;
+  z-index: 17;
 }
 .menu__btn > span::before {
   content: '';
@@ -93,25 +97,31 @@
   position: fixed;
   top: 0;
   left: -100%;
-  width: 300px;
-  height: 10%;
+  width: 10rem;
+  height: 14.5%;
   margin: 0;
-  padding: 80px 0;
   list-style: none;
   background-color: #ECEFF1;
+  border-width: 1px 1px 0 0;
   border-color: #c2822f;
+  border-style: solid;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
+  z-index: 17;
 }
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 12px 3rem;
   color: #c2822f;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lucida Console';
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
   transition-duration: .25s;
+  border-width: 1px 1px 0 0;
+  border-color: #c2822f;
+  border-style: solid;
+  margin: auto;
 }
 .menu__item:hover {
   background-color: #ddad86;
@@ -160,7 +170,7 @@
 }
 
 
- /* Styling for the restaurant boxes */
+ /* Styling for the restaurant boxes and popup*/
 .restaurantBox {
   text-align: center;
   height: 4rem;

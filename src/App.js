@@ -90,7 +90,7 @@ var CABANATAPS = {
   name: "Cabana Taps",
   price: "$$",
   address: "1910 Belcourt Ave, Nashville, TN 37212",
-  imgLoc: "bombaypalace.png",
+  imgLoc: "cabanataps.png",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -1124,9 +1124,9 @@ function App() {
         </label>
       <h1 id="taste">Taste the Nash</h1>
       <ul class="menu__box">
-        <li><a class="menu__item" href="#">Home</a></li>
-        <li><a class="menu__item" href="#">Sort</a></li>
-        <li><a class="menu__item" href="#">About</a></li>
+        <li><a class="menu__item" href="#top">Home</a></li>
+        <li><a class="menu__item" href="#sortSection">Sort</a></li>
+        <li><a class="menu__item" href="#bottom">About</a></li>
       </ul>
       </div>
       <div id="things">
@@ -1154,7 +1154,7 @@ function App() {
 
         <div id="select" href="sort">
           {/*Sort by selector*/}
-          <h2>Sort by</h2>
+          <h2 id="sortSection">Sort by</h2>
           <Select
             defaultValue={selectedSort}
             onChange={(v) => {
