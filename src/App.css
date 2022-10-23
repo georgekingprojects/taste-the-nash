@@ -68,12 +68,17 @@ html {
 /* Area with utensils background */
 #things {
   text-align: center;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   background-image: url("spoonforkbackground.png");
   background-size: 65rem;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+iframe {
+  border:transparent;
 }
 
 @media only screen and (max-device-width: 1366px) {
