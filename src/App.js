@@ -780,7 +780,7 @@ var FRUTTABOWLS = {
   price: "$$",
   address: "2424 Elliston Pl, Nashville, TN 37203",
   imgLoc: "fruttabowl.png",
-  memuUrl: "https://fruttabowls.com/",
+  menuUrl: "https://fruttabowls.com/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -1316,14 +1316,11 @@ function App() {
       about us
       </div>
       <div className="aboutUsBody">
-        <div className="rectangle">textinside rec</div>
-        <div className="rectangle">textinside rec</div>
-        <div className="rectangle">textinside rec</div>
-        <div className="rectangle">textinside rec</div>
-      </div>
-      <div className="breakFoot"></div>
-      <div className="aboutUs">
-        <p className="fillerText">About Us</p>
+        <p className="aboutUsText">
+          This project was envisioned and built by <br></br>
+          Kiera Thomas, George Wang, Sarah Besser, and Justin Munoz <br></br>
+          during VandyHacks IX. Connect with us on LinkedIn!
+        </p>
       </div>
     </div>
   );
