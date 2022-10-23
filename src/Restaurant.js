@@ -21,7 +21,7 @@ function Restaurant(props) {
   const [reviews, setReviews] = useState([]);
 
   const [seeReviews, setSeeReviews] = useState(false);
-  const [buttonText, setButtonText] = useState("Show Reviews");
+  const [buttonText, setButtonText] = useState("Show Recommendations");
 
   let lat2 = 0;
   let long2 = 0;
@@ -232,7 +232,7 @@ function Restaurant(props) {
               <p>Price Rating: {props.restaurant.price}</p>
 
               <form onSubmit={handleSubmit}>
-                <label>Leave a Review!</label>
+                <label>Leave a Recommendation!</label>
                 <input
                   type="text"
                   placeholder="Name..."
@@ -242,7 +242,7 @@ function Restaurant(props) {
 
                 <input
                   type="text"
-                  placeholder="Review..."
+                  placeholder="Recommendation e.g. Beef Taco, etc..."
                   value={review}
                   onChange={(e) => setReview(e.target.value)}
                 />
@@ -250,15 +250,15 @@ function Restaurant(props) {
                 <button type="submit">Submit</button>
               </form>
               <div>
-                <h3>Reviews</h3>
+                <h3>Menu Recommendations</h3>
                 <button
                   onClick={() => {
                     if (seeReviews) {
                       setSeeReviews(false);
-                      setButtonText("Show Reviews");
+                      setButtonText("Show Recommendations");
                     } else {
                       setSeeReviews(true);
-                      setButtonText("Hide Reviews");
+                      setButtonText("Hide Recommendations");
                     }
                   }}
                 >
@@ -270,12 +270,12 @@ function Restaurant(props) {
                     return (
                       <div>
                         <p>Name: {review.name}</p>
-                        <p>Review: {review.review}</p>
+                        <p>Recommendation: {review.review}</p>
                       </div>
                     );
                   })}
               </div>
-              {!reviews[0] && seeReviews && <p>No reviews yet.</p>}
+              {!reviews[0] && seeReviews && <p>No recommendations yet.</p>}
               <button className="popupButton"> Text Me Directions! </button>
             </>
           }
