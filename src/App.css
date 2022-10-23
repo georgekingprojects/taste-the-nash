@@ -71,6 +71,15 @@ html {
   padding: 2rem;
   background-image: url("spoonforkbackground.png");
   background-size: 65rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  #things {
+    background-attachment: scroll;
+  }
 }
 
 /* Styling for the hamburger and side bar */
