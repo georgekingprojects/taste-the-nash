@@ -4,6 +4,7 @@ import Restaurant from "./Restaurant.js";
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import { db } from "./firebase";
+import "@fontsource/niconne"
 
 // JSON data for each restaurant
 
@@ -1151,7 +1152,8 @@ function App() {
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
-      <h1 id="taste">Taste the Nash</h1>
+        <h1 id="title">Taste the Nash</h1>
+      <div id="taste"></div>
       <ul class="menu__box">
         <li><a class="menu__item" href="#top">Home</a></li>
         <li><a class="menu__item" href="#sortSection">Sort</a></li>
