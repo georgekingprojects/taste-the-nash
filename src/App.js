@@ -35,6 +35,7 @@ var BANHMIANDROLL = {
   address: "1808 20th Ave S Ste 101, Nashville, TN 37212",
   imgLoc: "banhmiroll.png",
   menuUrl: "https://banhmiandrollplus.com/our-menu/",
+  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.236339352223!2d-86.80158128478375!3d36.136458380090566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886467abb7b11605%3A0x6cf63c224b8c72ee!2sBanh%20mi%20and%20roll%20%2B!5e0!3m2!1sen!2sus!4v1666504563998!5m2!1sen!2sus",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -56,6 +57,7 @@ var BARISTAPARLOR = {
   address: "1817 21st Ave S, Nashville, TN 37212",
   imgLoc: "baristaparlor.png",
   menuUrl: "https://baristaparlor.com/menu/",
+  mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25777.891139961313!2d-86.81690220306011!3d36.136457085965226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886467d30c25247f%3A0xc0746e0bde21118!2sBarista%20Parlor%20Hillsboro%20Village!5e0!3m2!1sen!2sus!4v1666504620890!5m2!1sen!2sus",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -77,6 +79,7 @@ var BISCUITLOVE = {
   address: "2001 Belcourt Ave Nashville, TN 37212",
   imgLoc: "biscuitlove.png",
   menuUrl: "https://www.biscuitlove.com/menu",
+  menuUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5419.122697370997!2d-86.80339793532193!3d36.13662165747132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8864669f0694a49d%3A0xdf3d71804ee65e8e!2sBiscuit%20Love%20(Hillsboro%20Village)!5e0!3m2!1sen!2sus!4v1666504687026!5m2!1sen!2sus",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -831,6 +834,7 @@ var JETSPIZZA = {
   price: "$",
   address: "214 25th Ave N, Nashville, TN 37203",
   imgLoc: "jetspizza.png",
+  menuUrl: "https://orderjets.hungerrush.com/Order/Menu/138#pizza",
   isGetApp: true,
   isDrinks: false,
   isMexican: false,
@@ -851,6 +855,7 @@ var MICHAELANGELOSPIZZA = {
   price: "$",
   address: "205 22nd Ave N, Nashville, TN 37203",
   imgLoc: "michaelangelo.png",
+  menuUrl: "https://www.mymichaelangelospizza.com/",
   isGetApp: true,
   isDrinks: false,
   isMexican: false,
@@ -871,6 +876,7 @@ var OSCARSTACOSHOP = {
   price: "$",
   address: "2323 Elliston Pl, Nashville, TN 37203",
   imgLoc: "oscarstacoshop.png",
+  menuUrl: "https://www.toasttab.com/oscars-taco-shop-vandy-2323-elliston-place/v3/",
   isGetApp: false,
   isDrinks: false,
   isMexican: true,
@@ -891,6 +897,7 @@ var POKEBROS = {
   price: "$$",
   address: "2414 Elliston Pl, Nashville, TN 37203",
   imgLoc: "pokebros.png",
+  menuUrl: "https://eatpokebros.com/menu/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -911,6 +918,7 @@ var ROMAPIZZAANDPASTA = {
   price: "$",
   address: "2418 Elliston Pl, Nashville, TN 37203",
   imgLoc: "romapizza.png",
+  menuUrl: "https://www.romapizzanashvilletn.com/",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -931,6 +939,7 @@ var SATAYTHAIGRILL = {
   price: "$",
   address: "2412 Elliston Pl, Nashville, TN 37203",
   imgLoc: "satay.png",
+  menuUrl: "https://www.thaisataynashville.com/menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -951,6 +960,7 @@ var SWEETDOTS = {
   price: "$$",
   address: "2217 Elliston Pl, Nashville, TN 37203",
   imgLoc: "sweetdots.png",
+  menuUrl: "https://www.sweetdots.com/menu",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -971,6 +981,7 @@ var JPCAFE = {
   price: "$$",
   address: "41 Peabody St, Nashville, TN 37210",
   imgLoc: "jpcafe.png",
+  menuUrl: "https://www.ubereats.com/store/jp-cafe/IfJDzVHRSxS3mdPCNZbhlg",
   isGetApp: false,
   isDrinks: true,
   isMexican: false,
@@ -991,6 +1002,7 @@ var HOLYSMOKES = {
   price: "$",
   address: "300 24th Ave S, Nashville, TN 37212",
   imgLoc: "holysmokes.png",
+  menuUrl: "http://holysmokesbbqoftn.letseat.at/menu",
   isGetApp: false,
   isDrinks: false,
   isMexican: false,
@@ -1163,24 +1175,12 @@ function App() {
           <span></span>
         </label>
         <h1 id="title">Taste the Nash</h1>
-        <div id="taste"></div>
-        <ul class="menu__box">
-          <li>
-            <a class="menu__item" href="#top">
-              Home
-            </a>
-          </li>
-          <li>
-            <a class="menu__item" href="#sortSection">
-              Sort
-            </a>
-          </li>
-          <li>
-            <a class="menu__item" href="#aboutUsSection">
-              About
-            </a>
-          </li>
-        </ul>
+      <div id="taste"></div>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#top">Home</a></li>
+        <li><a class="menu__item" href="#sortSection">Sort</a></li>
+        <li><a class="menu__item" href="#aboutUsSection">About</a></li>
+      </ul>
       </div>
       <div id="things">
         <iframe
@@ -1243,6 +1243,7 @@ function App() {
                   restaurant={restaurant}
                   userLat={userLat}
                   userLong={userLong}
+                  menu={restaurant.menuUrl}
                 />
               </div>
             );
@@ -1273,31 +1274,30 @@ function App() {
                   restaurant={restaurant}
                   userLat={userLat}
                   userLong={userLong}
+                  menu={restaurant.menuUrl}
                 />
               </div>
             );
         })}
 
-      <div className="breakFoot"></div>
-      <div className="aboutUs">
-        <p className="fillerText">About Us</p>
+
+        <div className="breakFoot">
+        </div>
+        <div className="aboutUs">
+        <p className="fillerText">
+            About Us
+            </p>
+          </div>
+          <div className="aboutUsTitle" id="aboutUsSection">
+              about us
+          </div>
+          <div className="aboutUsBody">
+            <div className="rectangle"> 
+              textinside rec
+            </div>
+          </div>
       </div>
-      <div className="aboutUsTitle" id="aboutUsSection">
-        about us
-      </div>
-      <div className="aboutUsBody">
-        <div className="rectangle">textinside rec</div>
-      </div>
-      <div className="aboutUsBody">
-        <div className="rectangle">textinside rec</div>
-      </div>
-      <div className="aboutUsBody">
-        <div className="rectangle">textinside rec</div>
-      </div>
-      <div className="aboutUsBody">
-        <div className="rectangle">textinside rec</div>
-      </div>
-    </div>
+  
   );
 }
 
