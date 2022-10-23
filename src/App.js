@@ -1225,12 +1225,19 @@ function App() {
             );
         })}
 
+
+        <div className="breakFoot">
+        </div>
         <div className="aboutUs">
           <div className="aboutUsTitle">
+            <p className="fillerText">
             About Us
+            </p>
+              about us
           </div>
         </div>
     </div>
+  
   );
 }
 
