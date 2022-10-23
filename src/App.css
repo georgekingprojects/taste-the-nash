@@ -1,19 +1,24 @@
 .App {
-  margin: 0;
-  position: relative;
-  margin: -5em;
+  margin-top: -4rem;
+  font-family: 'Lucida Console';
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #dropdowns {
   display: table-row;
   text-align: left;
-  margin: 5rem;z-index: 11;
+  margin: 5rem;
+  z-index: 11;
 }
 
 #category {
   display: table-cell;
   width: 20rem;
-  padding-left: 1.5rem;z-index: 11;
+  padding-left: 1.5rem;
+  z-index: 11;
 }
 
 #select {
