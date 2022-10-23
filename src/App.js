@@ -1273,6 +1273,15 @@ function App() {
             <div className="rectangle"> 
               textinside rec
             </div>
+            <div className="rectangle"> 
+              textinside rec
+            </div>
+            <div className="rectangle"> 
+              textinside rec
+            </div>
+            <div className="rectangle"> 
+              textinside rec
+            </div>
           </div>
       </div>
   
